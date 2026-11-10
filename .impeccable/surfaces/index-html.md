@@ -13,7 +13,7 @@ Primary action: tap to call (847) 419-0970. Then open-now and hours, directions,
 
 ## Direction contract
 
-THESIS: The page is the bakery's wrapping paper and pastry-box kit, drawn in the same red pen as their logo. It refuses the category default of a stock-photo hero, a centered "welcome" headline and a row of identical menu cards, and it must never resemble the earlier El Chicanito "Rótulo" site.
+THESIS: The page is the bakery's wrapping paper and pastry-box kit, drawn in the same red pen as their logo. It refuses the category default of a stock-photo hero, a centered "welcome" headline and a row of identical menu cards, and it must never resemble the builder's earlier "Rótulo" bakery site.
 
 OWN-WORLD: Cream ground, logo red (#B03424), concha pink (#F4C7CF), cocoa (#3B2620). A tiled red line-art pattern (concha, churro, bolillo, cake) behind the hero, the big-orders field and the footer. Chunky rounded Bagel Fat One for display, Nunito Sans for text. Cards have red outlines and a flat pink offset shadow; scalloped doily edges; a pink gift tag for the weekend special; a notched ticket for hours; a dashed cut-line label for orders.
 

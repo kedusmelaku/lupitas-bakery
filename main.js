@@ -81,11 +81,31 @@
     return n + "\u00a0" + (lang === "es" ? (am ? "a.m." : "p.m.") : (am ? "AM" : "PM"));
   }
 
+  function chicagoWeekday() {
+    return new Intl.DateTimeFormat("en-US", { timeZone: "America/Chicago", weekday: "short" }).format(new Date());
+  }
+
+  /* Champurrado is Friday to Sunday: on those days the tag says "Today". */
+  var whenEn = document.querySelector("[data-when-en]");
+  var whenEs = document.querySelector("[data-when-es]");
+  function updateWeekend() {
+    if (!whenEn || !whenEs) return;
+    var day;
+    try { day = chicagoWeekday(); } catch (e) { return; } /* keep "This weekend" */
+    var today = day === "Fri" || day === "Sat" || day === "Sun";
+    whenEn.textContent = today ? "Today" : "This Weekend";
+    whenEs.textContent = today ? "hoy" : "este fin de semana";
+  }
+
+  var lastStatus = "";
   function updateStatus() {
     if (!statusEl) return;
     var now;
     try { now = chicagoHour(); } catch (e) { return; } /* no time zone support: keep it hidden */
     var open = now >= OPEN && now < CLOSE;
+    var key = open ? "open" : "closed";
+    if (key === lastStatus) return; /* only touch the live region when the status changes */
+    lastStatus = key;
     statusEl.classList.toggle("is-closed", !open);
     statusEn.textContent = open ? "Open now, until " + clock(CLOSE, "en") : "Closed now, opens at " + clock(OPEN, "en");
     statusEs.textContent = open ? "Abierto ahora, hasta las " + clock(CLOSE, "es") : "Cerrado ahora, abre a las " + clock(OPEN, "es");
@@ -93,7 +113,8 @@
   }
 
   updateStatus();
-  setInterval(updateStatus, 60 * 1000);
+  updateWeekend();
+  setInterval(function () { updateStatus(); updateWeekend(); }, 60 * 1000);
 
   /* ---------- Dock: tuck it away (and out of the tab order) while the hero's buttons show ---------- */
   var dock = document.querySelector("[data-dock]");
