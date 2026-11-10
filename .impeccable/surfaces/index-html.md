@@ -7,24 +7,24 @@ related_targets: []
 
 ## Scope
 
-`index.html`, the whole one-page spec site. Mode: Persuade (the visitor decides and acts: call, visit, order ahead).
+`index.html`, the whole one-page spec site for Lupita's Bakery. Mode: Persuade (the visitor decides and acts: call, visit, order a cake).
 
-Primary action: tap to call (847) 221-5447. Then hours and directions, then how to order cakes and tamales, then the menu by category. Proof is the verified address, phone and hours, plus real category names; no testimonials or stats exist.
+Primary action: tap to call (847) 419-0970. Then open-now and hours, directions, the weekend champurrado, what they bake, Rosca de Reyes, big orders, social follow links. Proof is the verified address, phone and hours, plus real product names from their own posts; no testimonials or stats exist.
 
 ## Direction contract
 
-THESIS: The page is the bakery's own hand-painted storefront signage, read on a phone. It refuses the category default of a stock-photo hero, a centered "welcome" headline and a row of equal menu cards.
+THESIS: The page is the bakery's wrapping paper and pastry-box kit, drawn in the same red pen as their logo. It refuses the category default of a stock-photo hero, a centered "welcome" headline and a row of identical menu cards, and it must never resemble the earlier El Chicanito "Rótulo" site.
 
-OWN-WORLD: Painted-wall ground, tomato-sign red, marigold, near-black ink and a deep teal used as a second sign color. Whole regions are painted fields (red front, teal board, marigold order slip, ink close). The name is lettered in very heavy, ultra-condensed Anybody with a painted drop shade. Panels carry an inset pinstripe like a sign-painter's border. Body text is Atkinson Hyperlegible Next. Window lettering lists the products.
+OWN-WORLD: Cream ground, logo red (#B03424), concha pink (#F4C7CF), cocoa (#3B2620). A tiled red line-art pattern (concha, churro, bolillo, cake) behind the hero, the big-orders field and the footer. Chunky rounded Bagel Fat One for display, Nunito Sans for text. Cards have red outlines and a flat pink offset shadow; scalloped doily edges; a pink gift tag for the weekend special; a notched ticket for hours; a dashed cut-line label for orders.
 
-STORY: A visitor sees which bakery this is (name, Palatine address, phone), learns if it is open right now, taps to call or gets directions, learns how to order cakes, flan and tamales ahead, then scans what is sold.
+STORY: A visitor sees the logo and name, learns if it is open now, taps to call or gets directions, notices this weekend's champurrado, reads the hours ticket, scans what they bake, sees Rosca de Reyes is coming, learns to call for party cakes, and can follow them on Instagram or TikTok.
 
-FIRST VIEWPORT: At 390px, a slim bar with the name and an English/Español toggle. Below it a red sign field: EL CHICANITO stacked huge across the width, "Panadería mexicana" under it, a live open-or-closed line, the address, and a full-width Call button plus a Directions button. A sticky bottom call bar takes over once the hero scrolls away.
+FIRST VIEWPORT: At 390px, a red bar with the name and an English/Español toggle; below it, on wrapping paper, a cream card with the logo circle, "Lupita's Bakery", "Mexican bakery in Wheeling, IL", the open-now pill, a full-width Call button and a Directions button. A sticky bottom call bar takes over once the hero buttons scroll away.
 
-FORM: Rótulo, direction A, chosen by the user over Caja Rosa and Charola. seed: none (pinned). User's words: "go with option A or C, lets start with A".
+FORM: Papel de envoltura, direction B, chosen by the user over A ("Trazo", pen line on paper). User's words: "B looks more personal, A looks like claude slop".
 
-FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+FINISH: unreviewed and undocumented is unfinished; this build ends with the critique, the web-design-guidelines review, fixes, DESIGN.md, and every shipping raster carrying its provenance.
 
 ## Unresolved
 
-Every unknown in PRODUCT.md shows as a visible placeholder. Photos come from Wikimedia Commons (openly licensed, listed in CREDITS.md) as stand-ins until the owner supplies real ones. Direction C (Charola) was rejected by the user.
+Every unknown in PRODUCT.md shows as a visible placeholder. Logo file pending (frame shows a placeholder). Three sample photos from Wikimedia Commons stand in; other product photos are empty slots.

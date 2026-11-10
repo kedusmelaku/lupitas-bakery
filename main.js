@@ -1,16 +1,16 @@
-/* El Chicanito Bakery: language toggle, open-now status, call dock. */
+/* Lupita's Bakery: language toggle, open-now status, call dock. */
 (function () {
   "use strict";
 
   var doc = document.documentElement;
 
   var titles = {
-    en: "El Chicanito Bakery, Mexican bakery in Palatine, IL",
-    es: "El Chicanito Bakery, panadería mexicana en Palatine, IL"
+    en: "Lupita\u2019s Bakery, Mexican bakery in Wheeling, IL",
+    es: "Lupita\u2019s Bakery, panadería mexicana en Wheeling, IL"
   };
   var descriptions = {
-    en: "El Chicanito Bakery, 1164 E Dundee Rd, Palatine, IL. Pan dulce, bolillos, tamales, tres leches cakes and flan. Open every day, 5 AM to 9 PM. Call (847) 221-5447.",
-    es: "El Chicanito Bakery, 1164 E Dundee Rd, Palatine, IL. Pan dulce, bolillos, tamales, pasteles de tres leches y flan. Abierto todos los días, de 5 a.m. a 9 p.m. Llame al (847) 221-5447."
+    en: "Lupita\u2019s Bakery, 220 McHenry Rd, Wheeling, IL. Pan dulce, bolillos, churros, tortas, tres leches and party cakes. Open every day, 5 AM to 10 PM. Call (847) 419-0970.",
+    es: "Lupita\u2019s Bakery, 220 McHenry Rd, Wheeling, IL. Pan dulce, bolillos, churros, tortas, pasteles de tres leches y para fiesta. Abierto todos los días, de 5 a.m. a 10 p.m. Llame al (847) 419-0970."
   };
 
   /* ---------- Language ---------- */
@@ -52,7 +52,7 @@
   setLang(doc.lang, false);
 
   /* ---------- Open now: hours come from the JSON-LD, in bakery time (America/Chicago) ---------- */
-  var OPEN = 5, CLOSE = 21;
+  var OPEN = 5, CLOSE = 22;
   try {
     var spec = JSON.parse(document.getElementById("business").textContent).openingHoursSpecification[0];
     OPEN = parseInt(spec.opens, 10);
@@ -75,14 +75,20 @@
     return h + m / 60;
   }
 
+  /* 22 -> "10 PM" / "10 p.m.", read from the same hours as the JSON-LD */
+  function clock(h, lang) {
+    var am = h < 12, n = h % 12 || 12;
+    return n + "\u00a0" + (lang === "es" ? (am ? "a.m." : "p.m.") : (am ? "AM" : "PM"));
+  }
+
   function updateStatus() {
     if (!statusEl) return;
     var now;
     try { now = chicagoHour(); } catch (e) { return; } /* no time zone support: keep it hidden */
     var open = now >= OPEN && now < CLOSE;
     statusEl.classList.toggle("is-closed", !open);
-    statusEn.textContent = open ? "Open now, until 9\u00a0PM" : "Closed now, opens at 5\u00a0AM";
-    statusEs.textContent = open ? "Abierto ahora, hasta las 9\u00a0p.m." : "Cerrado ahora, abre a las 5\u00a0a.m.";
+    statusEn.textContent = open ? "Open now, until " + clock(CLOSE, "en") : "Closed now, opens at " + clock(OPEN, "en");
+    statusEs.textContent = open ? "Abierto ahora, hasta las " + clock(CLOSE, "es") : "Cerrado ahora, abre a las " + clock(OPEN, "es");
     statusEl.hidden = false;
   }
 
