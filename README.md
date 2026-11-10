@@ -23,7 +23,7 @@ Then open `http://localhost:8000/`. `?lang=es` opens in Spanish; without it, the
 
 ## Keeping it evergreen
 
-The copy avoids anything time-limited ("new", "this weekend", specials), so the site does not need editing when the menu changes. Point people to Instagram and TikTok for what is new.
+The copy avoids anything time-limited, with one exception: the pink tag under the hero features "New at Lupita's: Blueberry Lemon Loaf". Change or remove it (in `index.html`, the `<aside class="weekend">` block) once the loaf is no longer new. Everything else points to Instagram and TikTok for what is new.
 
 ## Placeholders to fill (owner to confirm)
 
@@ -67,13 +67,14 @@ To swap a photo, replace the file in `images/` (same name), then update its `wid
 - Remove the robots `noindex` meta tag and replace robots.txt.
 - Add `url`, `geo` (latitude/longitude), `logo` and `image` to the JSON-LD.
 - Remove the "Preview site" line in the footer.
+- Check the "New at Lupita's" tag is still current.
 - Replace the five blog photos and the Street View storefront (see `CREDITS.md`).
 
 ## Spanish for a native speaker to check
 
 The Spanish uses usted throughout. Please have a native speaker confirm:
 
-- "Champurrado calientito los fines de semana" and "Todos los viernes, sábados y domingos"
+- "Nuevo en Lupita’s: panqué de mora azul y limón" and "Pídalo en el mostrador"
 - "Lo que horneamos" for "What we bake"
 - "Panqués ... como el de mora azul y limón" for the loaf cakes ("mora azul" vs "arándano")
 - "Vea lo que sale del horno en Instagram y TikTok"

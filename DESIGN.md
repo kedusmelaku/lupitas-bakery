@@ -25,7 +25,7 @@ The page is Lupita's own wrapping paper and pastry-box kit, drawn in the same re
 - **Corners**: kept tight, like cut card stock: `--r-card` 8px, `--r-btn` 6px, `--r-chip` 4px. Only true circles (logo, icons, dots) are round.
 - **Card**: white fill, 2.5px red outline, `--r-card` corners, flat 7px pink offset shadow (the hero card).
 - **Doily edge**: pink half-circle scallops under the hero and over the seasonal panel.
-- **Gift tag** `.tag`: pink tag with a string hole for the standing weekend item, "Hot Champurrado on Weekends, every Friday, Saturday and Sunday". Copy stays evergreen: nothing on the page should need editing when a special starts or ends. Swings once on load.
+- **Gift tag** `.tag`: pink tag with a string hole for one featured item, currently "New at Lupita's: Blueberry Lemon Loaf. Ask for it at the counter." This is the one place time-limited copy is allowed: change or remove it when the item is no longer new. Swings once on load.
 - **Ticket** `.ticket`: hours at display size, perforated rule, side notches, address and directions.
 - **Cake box label** `.box`: white label with a dashed cut line, on the red wrapping paper.
 - **Buttons**: 56px tall, `--r-btn` corners. Call is solid red with a darker pressed edge; secondary is white with a red outline.
@@ -39,5 +39,5 @@ The page is Lupita's own wrapping paper and pastry-box kit, drawn in the same re
 - Focus ring: 3px, color per field through `--focus`.
 - One motion: the gift tag swings once (skipped under reduced motion).
 - Bilingual: every string is an EN/ES pair of `lang` spans; CSS hides the inactive language. Default comes from `?lang=`, then the saved choice, then the browser language.
-- No em dashes, no prices, no unconfirmed claims, and no time-limited wording ("new", "this weekend", "today's special") that would force site updates.
+- No em dashes, no prices, no unconfirmed claims. Time-limited wording ("new", "this weekend") lives only in the gift tag.
 - Must never resemble the earlier "Rótulo" site: no painted sign blocks, marigold, teal or condensed type.

@@ -12,11 +12,11 @@ Plain static HTML, CSS and minimal vanilla JS. No framework, no build step. Font
 
 ## Users
 
-Neighborhood regulars of a Mexican panadería in Wheeling, IL, many Spanish-speaking, plus English speakers. Almost all on phones, often deciding on the spot: call about a cake, check whether the bakery is open, get directions, or see if there is champurrado this weekend. A second audience for this spec version is the owner, who will see it on the builder's phone before a pitch.
+Neighborhood regulars of a Mexican panadería in Wheeling, IL, many Spanish-speaking, plus English speakers. Almost all on phones, often deciding on the spot: call about a cake, check whether the bakery is open, get directions. A second audience for this spec version is the owner, who will see it on the builder's phone before a pitch.
 
 ## Product Purpose
 
-A spec website for Lupita's Bakery (Instagram: Lupita's Bakery Inc.), which has no website today. Page goals, in order: 1) tap to call, always within reach on mobile; 2) hours and directions, open every day 5 AM to 10 PM; 3) what they bake, with photos; 4) the weekend champurrado and seasonal Rosca de Reyes; 5) a neutral "For big orders and party cakes, call us" section whose details are placeholders; 6) Instagram and TikTok follow links.
+A spec website for Lupita's Bakery (Instagram: Lupita's Bakery Inc.), which has no website today. Page goals, in order: 1) tap to call, always within reach on mobile; 2) hours and directions, open every day 5 AM to 10 PM; 3) what they bake, with photos; 4) a featured-item tag (currently the new blueberry lemon loaf) and seasonal Rosca de Reyes; 5) a neutral "For big orders and party cakes, call us" section whose details are placeholders; 6) Instagram and TikTok follow links.
 
 ## Positioning
 
@@ -28,7 +28,7 @@ Customers order tres leches and party cakes for holidays and birthdays (one orde
 
 ## Capabilities and Constraints
 
-- What they sell (no prices): pan dulce including conchas; bolillos, including cheese and jalapeño, and chorizo and cheese; churros, plain or filled with strawberry or vanilla; tortas, including torta de milanesa; loaf cakes, including the new blueberry lemon loaf; buñuelos; tres leches and party cakes; hot champurrado Friday to Sunday; Rosca de Reyes (seasonal).
+- What they sell (no prices): pan dulce including conchas; bolillos, including cheese and jalapeño, and chorizo and cheese; churros, plain or filled with strawberry or vanilla; tortas, including torta de milanesa; loaf cakes, including the new blueberry lemon loaf; buñuelos; tres leches and party cakes; hot champurrado Friday to Sunday (not currently shown on the page); Rosca de Reyes (seasonal).
 - Fully bilingual, English default, obvious language toggle. Spanish written naturally (usted), with uncertain phrasing flagged for a native speaker.
 - Unlisted spec site: `noindex, nofollow` meta and a robots.txt that disallows everything.
 - Bakery JSON-LD with the verified details and social profiles, ready for launch.
