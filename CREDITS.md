@@ -6,12 +6,14 @@
 
 ## Photos
 
-The three menu photos are **sample photos** from Wikimedia Commons, standing in until the bakery supplies its own. Each one carries a "Sample photo" tag on the page. Swap them before launch:
+Every food photo on the site is a **sample photo**, standing in until the bakery supplies its own. Each one carries a "Sample photo" tag on the page. Swap them before launch:
 1. Replace the file in `images/`, keeping the same name, or update the `src` in `index.html`.
 2. Update the `width`/`height` and both alt texts (`alt` in English, `data-alt-es` in Spanish).
 3. Delete its row below and its "Sample photo" caption.
 
-All files are compressed WebP, at most 1,200px wide, cropped from the originals.
+All files are compressed WebP, cropped to their frame (1:1 for menu items, 3:2 for pan dulce and the rosca).
+
+### Openly licensed (Wikimedia Commons)
 
 | File on the site | Used for | Original | Author | License |
 |---|---|---|---|---|
@@ -19,9 +21,23 @@ All files are compressed WebP, at most 1,200px wide, cropped from the originals.
 | `images/bolillos.webp` (960×960) | Bolillos | [Bolillos rolls.JPG](https://commons.wikimedia.org/wiki/File:Bolillos_rolls.JPG) | Glane23 | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
 | `images/tres-leches.webp` (960×960) | Cakes | [Tres Leches.jpg](https://commons.wikimedia.org/wiki/File:Tres_Leches.jpg) | AndonicO | [CC BY 2.5](https://creativecommons.org/licenses/by/2.5/) |
 
-Changes made to every photo: cropped to the frame's aspect ratio, resized, and converted to WebP. Under the CC BY-SA licenses, the cropped versions are shared under the same license as their originals.
+Under the CC BY-SA licenses, the cropped versions are shared under the same license as their originals.
 
-The line-art sketches in the empty photo slots and the wrapping-paper pattern were drawn for this site as inline SVG.
+### Supplied by the site builder: license unknown, replace before launch
+
+These were added from the web as visual stand-ins. Their filenames point to food blogs, and the loaf photo carried a watermark (cropped out), so assume they are copyrighted by their photographers. They are not photos of Lupita's products. Keep them only while the site is an unlisted preview, and replace them with the bakery's own photos (or licensed ones) before the site goes public.
+
+| File on the site | Used for | Uploaded as |
+|---|---|---|
+| `images/churros.webp` (643×643) | Churros | `DSC_0396A.jpg` |
+| `images/tortas.webp` (578×578) | Tortas | `breakfast_tortas.jpg` |
+| `images/blueberry-lemon-loaf.webp` (960×960) | Loaf cakes | `Dash-of-Jazz-Lemon-Blueberry-Loaf-15.jpg` |
+| `images/bunuelos.webp` (960×960) | Buñuelos | `Bunuelos-12.jpg` |
+| `images/rosca-de-reyes.webp` (996×664) | Rosca de Reyes | `CFYL-Rosca-De-Reyes.jpg` |
+
+**Still empty:** the storefront frame in "The Bakery" section. It needs a real photo of Lupita's storefront on McHenry Rd (3:2, 1200×800). A photo of any other bakery would mislead.
+
+The line-art sketch in the empty storefront slot and the wrapping-paper pattern were drawn for this site as inline SVG.
 
 ## Fonts
 

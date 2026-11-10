@@ -6,7 +6,7 @@ An unlisted one-page spec site for Lupita's Bakery (220 McHenry Rd, Wheeling, IL
 - `styles.css`: the "Papel de envoltura" wrapping-paper look (see `DESIGN.md`)
 - `main.js`: language toggle, live open/closed status (Chicago time), and the call bar
 - `robots.txt` + `<meta name="robots" content="noindex, nofollow">`: keep it out of search
-- `images/`: three sample menu photos as compressed WebP (see `CREDITS.md`); plus the logo, `logo.png`
+- `images/`: sample food photos as compressed WebP (see `CREDITS.md`), plus the logo, `logo.png`
 - `fonts/`: self-hosted Bagel Fat One and Nunito Sans (both SIL Open Font License)
 
 ## Preview
@@ -43,21 +43,23 @@ Every unconfirmed item is a pink chip with a red "TBD" (Spanish: "PENDIENTE") la
 12. Big orders: other ways to order (in person, Instagram messages?)
 13. Owner's name and story: who started Lupita's, when, and why (owner writes or approves)
 
-## Image slots to fill
+## Photos to replace
 
-| Slot | Ratio / size | What to shoot |
-|---|---|---|
-| Pan dulce | 3:2, 1200×800 | Replace the sample: their conchas and pan dulce |
-| Bolillos | 1:1, 960×960 | Replace the sample: their bolillos (cheese and jalapeño, chorizo and cheese) |
-| Churros | 1:1, 960×960 | Churros, filled and plain |
-| Tortas | 1:1, 960×960 | A torta de milanesa, cut in half |
-| Loaf cakes | 1:1, 960×960 | The blueberry lemon loaf, sliced |
-| Buñuelos | 1:1, 960×960 | Buñuelos, stacked |
-| Cakes | 1:1, 960×960 | Replace the sample: their tres leches or a party cake |
-| Rosca de Reyes | 3:2, 1200×800 | A Lupita's Rosca de Reyes, whole |
-| The bakery | 3:2, 1200×800 | The storefront from McHenry Rd, sign visible |
+Every food photo is a stand-in tagged "Sample photo" on the page (see `CREDITS.md`). Five came from food blogs with unknown licenses, so they must be replaced before the site goes public.
 
-To fill an empty slot, replace its `<div class="photo__slot">…</div>` with `<img class="photo__img" src="images/NAME.webp" width="…" height="…" loading="lazy" decoding="async" alt="…" data-alt-es="…">`.
+| Slot | Ratio / size | Current | What to shoot |
+|---|---|---|---|
+| Pan dulce | 3:2, 1200×800 | Wikimedia sample | Their conchas and pan dulce |
+| Bolillos | 1:1, 960×960 | Wikimedia sample | Their bolillos (cheese and jalapeño, chorizo and cheese) |
+| Cakes | 1:1, 960×960 | Wikimedia sample | Their tres leches or a party cake |
+| Churros | 1:1, 960×960 | Blog photo, replace | Their churros, filled and plain |
+| Tortas | 1:1, 960×960 | Blog photo, replace | Their torta de milanesa, cut in half |
+| Loaf cakes | 1:1, 960×960 | Blog photo, replace | Their blueberry lemon loaf, sliced |
+| Buñuelos | 1:1, 960×960 | Blog photo, replace | Their buñuelos, stacked |
+| Rosca de Reyes | 3:2, 1200×800 | Blog photo, replace | Their Rosca de Reyes, whole |
+| The bakery | 3:2, 1200×800 | **Empty** | The storefront from McHenry Rd, sign visible |
+
+To fill the storefront slot, replace its `<div class="photo__slot">…</div>` with `<img class="photo__img" src="images/storefront.webp" width="1200" height="800" loading="lazy" decoding="async" alt="…" data-alt-es="…">`.
 
 **Still unknown, not shown on the page:** prices (none on purpose).
 

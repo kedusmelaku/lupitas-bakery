@@ -27,4 +27,4 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the crit
 
 ## Unresolved
 
-Every unknown in PRODUCT.md shows as a visible placeholder. Logo file pending (frame shows a placeholder). Three sample photos from Wikimedia Commons stand in; other product photos are empty slots.
+Every unknown in PRODUCT.md shows as a visible placeholder. Logo in place. All food photos are stand-ins tagged "Sample photo" (three Wikimedia, five from food blogs to be replaced); the storefront slot is empty.
