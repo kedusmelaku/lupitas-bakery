@@ -27,10 +27,11 @@
   --open: #2E8B57;
   --red-wash: rgb(176 52 36 / .08);
 
-  /* line-art wrapping paper tile: concha, churro, bolillo, cake (stroke color set per use) */
-  --tile: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150' fill='none' stroke='%23B03424' stroke-opacity='.2' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14 40a18 13 0 0 1 36 0z'/%3E%3Cpath d='M19 34l26-6M21 28l22 6M32 27v13'/%3E%3Cg transform='rotate(32 104 34)'%3E%3Crect x='99' y='14' width='10' height='40' rx='5'/%3E%3Cpath d='M100 22l8 3M100 30l8 3M100 38l8 3M100 46l8 3'/%3E%3C/g%3E%3Cellipse cx='36' cy='108' rx='19' ry='10'/%3E%3Cpath d='M29 101c4 4 4 10 0 14M38 99c4 5 4 13 0 18'/%3E%3Cpath d='M88 100h32v22H88zM88 108c5 4 11-4 16 0s11-4 16 0M104 92v8'/%3E%3Cpath d='M104 86c-2 2 0 4 0 4s2-2 0-4z'/%3E%3C/svg%3E");
-  --tile-strong: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150' fill='none' stroke='%23B03424' stroke-opacity='.3' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14 40a18 13 0 0 1 36 0z'/%3E%3Cpath d='M19 34l26-6M21 28l22 6M32 27v13'/%3E%3Cg transform='rotate(32 104 34)'%3E%3Crect x='99' y='14' width='10' height='40' rx='5'/%3E%3Cpath d='M100 22l8 3M100 30l8 3M100 38l8 3M100 46l8 3'/%3E%3C/g%3E%3Cellipse cx='36' cy='108' rx='19' ry='10'/%3E%3Cpath d='M29 101c4 4 4 10 0 14M38 99c4 5 4 13 0 18'/%3E%3Cpath d='M88 100h32v22H88zM88 108c5 4 11-4 16 0s11-4 16 0M104 92v8'/%3E%3Cpath d='M104 86c-2 2 0 4 0 4s2-2 0-4z'/%3E%3C/svg%3E");
-  --tile-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150' fill='none' stroke='%23FBF3E4' stroke-opacity='.1' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14 40a18 13 0 0 1 36 0z'/%3E%3Cpath d='M19 34l26-6M21 28l22 6M32 27v13'/%3E%3Cg transform='rotate(32 104 34)'%3E%3Crect x='99' y='14' width='10' height='40' rx='5'/%3E%3Cpath d='M100 22l8 3M100 30l8 3M100 38l8 3M100 46l8 3'/%3E%3C/g%3E%3Cellipse cx='36' cy='108' rx='19' ry='10'/%3E%3Cpath d='M29 101c4 4 4 10 0 14M38 99c4 5 4 13 0 18'/%3E%3Cpath d='M88 100h32v22H88zM88 108c5 4 11-4 16 0s11-4 16 0M104 92v8'/%3E%3Cpath d='M104 86c-2 2 0 4 0 4s2-2 0-4z'/%3E%3C/svg%3E");
+  /* line-art wrapping paper tile: concha, churro, bolillo, cake, staggered so it fills edge to edge.
+     Sections center it (50% 0) so both sides of the screen end the same way. */
+  --tile: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' fill='none' stroke='%23B03424' stroke-opacity='.2' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cg transform='translate(40 40)'%3E%3Cpath d='M-18 7a18 13 0 0 1 36 0z'/%3E%3Cpath d='M-13 1l26-6M-11-5l22 6M0-6v13'/%3E%3C/g%3E%3Cg transform='translate(120 40)'%3E%3Cg transform='rotate(32)'%3E%3Crect x='-5' y='-21' width='10' height='42' rx='5'/%3E%3Cpath d='M-4-12l8 3M-4-4l8 3M-4 4l8 3M-4 12l8 3'/%3E%3C/g%3E%3C/g%3E%3Cg transform='translate(0 120)'%3E%3Cellipse rx='19' ry='10'/%3E%3Cpath d='M-7-7c4 4 4 10 0 14M2-9c4 5 4 13 0 18'/%3E%3C/g%3E%3Cg transform='translate(160 120)'%3E%3Cellipse rx='19' ry='10'/%3E%3Cpath d='M-7-7c4 4 4 10 0 14M2-9c4 5 4 13 0 18'/%3E%3C/g%3E%3Cg transform='translate(80 120)'%3E%3Cpath d='M-16-4h32v20h-32zM-16 3c5 4 11-4 16 0s11-4 16 0M0-12v8'/%3E%3Cpath d='M0-18c-2 2 0 4 0 4s2-2 0-4z'/%3E%3C/g%3E%3C/svg%3E");
+  --tile-strong: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' fill='none' stroke='%23B03424' stroke-opacity='.3' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cg transform='translate(40 40)'%3E%3Cpath d='M-18 7a18 13 0 0 1 36 0z'/%3E%3Cpath d='M-13 1l26-6M-11-5l22 6M0-6v13'/%3E%3C/g%3E%3Cg transform='translate(120 40)'%3E%3Cg transform='rotate(32)'%3E%3Crect x='-5' y='-21' width='10' height='42' rx='5'/%3E%3Cpath d='M-4-12l8 3M-4-4l8 3M-4 4l8 3M-4 12l8 3'/%3E%3C/g%3E%3C/g%3E%3Cg transform='translate(0 120)'%3E%3Cellipse rx='19' ry='10'/%3E%3Cpath d='M-7-7c4 4 4 10 0 14M2-9c4 5 4 13 0 18'/%3E%3C/g%3E%3Cg transform='translate(160 120)'%3E%3Cellipse rx='19' ry='10'/%3E%3Cpath d='M-7-7c4 4 4 10 0 14M2-9c4 5 4 13 0 18'/%3E%3C/g%3E%3Cg transform='translate(80 120)'%3E%3Cpath d='M-16-4h32v20h-32zM-16 3c5 4 11-4 16 0s11-4 16 0M0-12v8'/%3E%3Cpath d='M0-18c-2 2 0 4 0 4s2-2 0-4z'/%3E%3C/g%3E%3C/svg%3E");
+  --tile-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' fill='none' stroke='%23FBF3E4' stroke-opacity='.1' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cg transform='translate(40 40)'%3E%3Cpath d='M-18 7a18 13 0 0 1 36 0z'/%3E%3Cpath d='M-13 1l26-6M-11-5l22 6M0-6v13'/%3E%3C/g%3E%3Cg transform='translate(120 40)'%3E%3Cg transform='rotate(32)'%3E%3Crect x='-5' y='-21' width='10' height='42' rx='5'/%3E%3Cpath d='M-4-12l8 3M-4-4l8 3M-4 4l8 3M-4 12l8 3'/%3E%3C/g%3E%3C/g%3E%3Cg transform='translate(0 120)'%3E%3Cellipse rx='19' ry='10'/%3E%3Cpath d='M-7-7c4 4 4 10 0 14M2-9c4 5 4 13 0 18'/%3E%3C/g%3E%3Cg transform='translate(160 120)'%3E%3Cellipse rx='19' ry='10'/%3E%3Cpath d='M-7-7c4 4 4 10 0 14M2-9c4 5 4 13 0 18'/%3E%3C/g%3E%3Cg transform='translate(80 120)'%3E%3Cpath d='M-16-4h32v20h-32zM-16 3c5 4 11-4 16 0s11-4 16 0M0-12v8'/%3E%3Cpath d='M0-18c-2 2 0 4 0 4s2-2 0-4z'/%3E%3C/g%3E%3C/svg%3E");
 
   /* placeholders: pink wash, red dotted underline, small red TBD label */
   --ph-ink: var(--cocoa);
@@ -42,8 +43,10 @@
 
   --gutter: max(1rem, env(safe-area-inset-left), env(safe-area-inset-right));   /* clears a sideways notch */
   --max: 70rem;
-  --r-card: 1.375rem;        /* big rounded cards */
-  --r-btn: 1rem;
+  --r-card: .5rem;           /* cards: just softened, like cut card stock */
+  --r-btn: .375rem;
+  --r-chip: .25rem;
+  --tile-size: 120px;        /* denser on phones so the paper shows beside the hero card */          /* pills, chips, toggles */
   --line: 2.5px solid var(--red);
   --dock-h: 4.25rem;
   --ease-out: cubic-bezier(.16, 1, .3, 1);
@@ -155,7 +158,7 @@ address { font-style: normal; }
 .lang {
   display: inline-flex;
   padding: 3px;
-  border-radius: 999px;
+  border-radius: var(--r-chip);
   background: rgb(0 0 0 / .18);
 }
 .lang__btn {
@@ -164,7 +167,7 @@ address { font-style: normal; }
   margin: 0;
   min-height: 2.75rem;
   padding: 0 .85rem;
-  border-radius: 999px;
+  border-radius: var(--r-chip);
   background: transparent;
   color: var(--cream);
   font: 800 1rem/1 var(--body);
@@ -227,7 +230,7 @@ address { font-style: normal; }
 .hero {
   --focus: var(--cocoa);
   padding: 1.75rem calc(var(--gutter) + 1rem) 2.75rem;
-  background: var(--tile-strong) 0 0 / 150px 150px, var(--cream);
+  background: var(--tile-strong) 50% 0 / var(--tile-size) var(--tile-size), var(--cream);
   border-bottom: 5px solid var(--pink);
   margin-bottom: 10px;
 }
@@ -261,7 +264,7 @@ address { font-style: normal; }
   color: var(--red-deep);
   padding: .3rem .7rem;
   border: 2px dashed rgb(176 52 36 / .5);
-  border-radius: 999px;
+  border-radius: var(--r-chip);
 }
 
 .hero__name {
@@ -277,7 +280,7 @@ address { font-style: normal; }
   display: inline-flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: .5rem;
   max-width: 100%;
   padding: .35rem .9rem;
-  border-radius: 999px;
+  border-radius: var(--r-chip);
   background: var(--pink-lt);
   font-weight: 800;
   font-size: 1rem;
@@ -300,7 +303,7 @@ address { font-style: normal; }
   margin: 0 auto;
   padding: 1rem 1.1rem 1rem 3.4rem;
   background: var(--pink);
-  border-radius: 0 1rem 1rem 0;
+  border-radius: 0 var(--r-card) var(--r-card) 0;
   clip-path: polygon(1.75rem 0, 100% 0, 100% 100%, 1.75rem 100%, 0 50%);
 }
 .tag::before {   /* the string hole */
@@ -327,7 +330,7 @@ address { font-style: normal; }
   padding: 1.4rem 1.5rem 1.25rem;
   background: var(--white);
   border: var(--line);
-  border-radius: 1rem;
+  border-radius: var(--r-card);
   position: relative;
 }
 /* ticket notches on both sides */
@@ -379,7 +382,7 @@ address { font-style: normal; }
   padding: .55rem .55rem .8rem;
   background: var(--white);
   border: 2px solid var(--red);
-  border-radius: 1rem;
+  border-radius: var(--r-card);
 }
 .item--feature { grid-column: 1 / -1; }
 .item__name {
@@ -393,15 +396,6 @@ address { font-style: normal; }
 .item--feature .item__name { font-size: 1.75rem; }
 .item__desc { font-size: .98rem; line-height: 1.4; padding-inline: .15rem; }
 .item--feature .item__desc { font-size: 1.05rem; }
-.new {
-  display: inline-block;
-  padding: .05rem .45rem;
-  border-radius: 999px;
-  background: var(--red);
-  color: var(--cream);
-  font-weight: 900; font-size: .875rem; letter-spacing: .06em; text-transform: uppercase;
-  vertical-align: .05em;
-}
 
 /* ---------- Photo frames ---------- */
 .photo { margin: 0; position: relative; }
@@ -411,14 +405,14 @@ address { font-style: normal; }
   height: auto;
   aspect-ratio: var(--ratio, 4 / 3);
   object-fit: cover;
-  border-radius: .7rem;
+  border-radius: .25rem;
   background: var(--pink-lt);   /* holds the space while the image loads */
 }
 /* Stand-in photos are marked like every other unconfirmed item. */
 .photo__sample {
   position: absolute; left: .45rem; bottom: .45rem;
   padding: .15rem .5rem;
-  border-radius: 999px;
+  border-radius: var(--r-chip);
   background: rgb(59 38 32 / .82);
   color: var(--cream);
   font: 800 .875rem/1.3 var(--body);
@@ -433,7 +427,7 @@ address { font-style: normal; }
   color: var(--cocoa);
   background: var(--pink-lt);
   border: 2px dashed rgb(176 52 36 / .3);
-  border-radius: .7rem;
+  border-radius: .25rem;
 }
 /* a red-pen sketch of the item: clearly a drawing, never a fake photo */
 .photo__art {
@@ -447,7 +441,7 @@ address { font-style: normal; }
   color: var(--cream);
   background: var(--red-deep);
   padding: .15rem .55rem;
-  border-radius: 999px;
+  border-radius: var(--r-chip);
 }
 .photo__what { font-size: .9rem; font-weight: 700; line-height: 1.3; max-width: 22ch; }
 /* small menu slots: a smaller sketch so the caption always fits */
@@ -461,7 +455,7 @@ address { font-style: normal; }
   background: var(--ph-bg);
   font-weight: 700;
   padding: .05rem .35rem;
-  border-radius: .35rem;
+  border-radius: .2rem;
   text-decoration-line: underline;
   text-decoration-style: dotted;
   text-decoration-color: var(--red);
@@ -514,7 +508,7 @@ html[lang="es"] .ph::before { content: "PENDIENTE"; }
 /* ---------- 6. Big orders: the cake box label on red wrapping paper ---------- */
 .order {
   --focus: var(--cream);
-  background: var(--tile-light) 0 0 / 150px 150px, var(--red);
+  background: var(--tile-light) 50% 0 / var(--tile-size) var(--tile-size), var(--red);
   padding: 2.5rem var(--gutter);
 }
 .box {
@@ -582,7 +576,7 @@ html[lang="es"] .ph::before { content: "PENDIENTE"; }
 /* ---------- Close: cocoa footer on wrapping paper ---------- */
 .close {
   --focus: var(--pink);
-  background: var(--tile-light) 0 0 / 150px 150px, var(--cocoa);
+  background: var(--tile-light) 50% 0 / var(--tile-size) var(--tile-size), var(--cocoa);
   color: var(--cream);
   padding: 2.5rem var(--gutter) 2rem;
   display: grid;
@@ -639,13 +633,13 @@ html.js .dock.is-tucked { transform: translateY(110%); }
 
 /* ---------- Wider screens ---------- */
 @media (min-width: 40rem) {
-  :root { --gutter: max(2rem, env(safe-area-inset-left), env(safe-area-inset-right)); }
+  :root { --gutter: max(2rem, env(safe-area-inset-left), env(safe-area-inset-right)); --tile-size: 160px; }
   .hero__actions { grid-template-columns: 1fr 1fr; }
   .tray { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.1rem; }
   .item--feature { grid-column: span 3; }
   .rosca { grid-template-columns: 1.2fr 1fr; align-items: center; padding: .8rem; }
   .follow__links { grid-template-columns: 1fr 1fr; }
-  .dock { left: 50%; right: auto; width: min(30rem, 100% - 2rem); transform: translateX(-50%); border-radius: 1rem 1rem 0 0; }
+  .dock { left: 50%; right: auto; width: min(30rem, 100% - 2rem); transform: translateX(-50%); border-radius: var(--r-card) var(--r-card) 0 0; }
   html.js .dock.is-tucked { transform: translate(-50%, 110%); }
   .dock:focus-within { transform: translateX(-50%) !important; }
 }

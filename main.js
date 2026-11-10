@@ -81,22 +81,6 @@
     return n + "\u00a0" + (lang === "es" ? (am ? "a.m." : "p.m.") : (am ? "AM" : "PM"));
   }
 
-  function chicagoWeekday() {
-    return new Intl.DateTimeFormat("en-US", { timeZone: "America/Chicago", weekday: "short" }).format(new Date());
-  }
-
-  /* Champurrado is Friday to Sunday: on those days the tag says "Today". */
-  var whenEn = document.querySelector("[data-when-en]");
-  var whenEs = document.querySelector("[data-when-es]");
-  function updateWeekend() {
-    if (!whenEn || !whenEs) return;
-    var day;
-    try { day = chicagoWeekday(); } catch (e) { return; } /* keep "This weekend" */
-    var today = day === "Fri" || day === "Sat" || day === "Sun";
-    whenEn.textContent = today ? "Today" : "This Weekend";
-    whenEs.textContent = today ? "hoy" : "este fin de semana";
-  }
-
   var lastStatus = "";
   function updateStatus() {
     if (!statusEl) return;
@@ -113,8 +97,7 @@
   }
 
   updateStatus();
-  updateWeekend();
-  setInterval(function () { updateStatus(); updateWeekend(); }, 60 * 1000);
+  setInterval(updateStatus, 60 * 1000);
 
   /* ---------- Dock: tuck it away (and out of the tab order) while the hero's buttons show ---------- */
   var dock = document.querySelector("[data-dock]");

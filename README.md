@@ -4,7 +4,7 @@ An unlisted one-page spec site for Lupita's Bakery (220 McHenry Rd, Wheeling, IL
 
 - `index.html`: the page (English and Spanish side by side, switched with `lang`)
 - `styles.css`: the "Papel de envoltura" wrapping-paper look (see `DESIGN.md`)
-- `main.js`: language toggle, live open/closed status and the champurrado "Today" tag (Chicago time), and the call bar
+- `main.js`: language toggle, live open/closed status (Chicago time), and the call bar
 - `robots.txt` + `<meta name="robots" content="noindex, nofollow">`: keep it out of search
 - `images/`: three sample menu photos as compressed WebP (see `CREDITS.md`); the logo goes here as `logo.png`
 - `fonts/`: self-hosted Bagel Fat One and Nunito Sans (both SIL Open Font License)
@@ -21,6 +21,10 @@ Then open `http://localhost:8000/`. `?lang=es` opens in Spanish; without it, the
 
 Save the logo as `images/logo.png` (square, at least 480×480). The circle in the hero shows a "Logo" placeholder until the file exists; nothing else needs to change.
 
+## Keeping it evergreen
+
+The copy avoids anything time-limited ("new", "this weekend", specials), so the site does not need editing when the menu changes. Point people to Instagram and TikTok for what is new.
+
 ## Placeholders to fill (owner to confirm)
 
 Every unconfirmed item is a pink chip with a red "TBD" (Spanish: "PENDIENTE") label and a dotted underline. To find them in the code, search `class="ph"`.
@@ -31,7 +35,7 @@ Every unconfirmed item is a pink chip with a red "TBD" (Spanish: "PENDIENTE") la
 4. Other loaf cake flavors besides blueberry lemon
 5. Buñuelos description
 6. Cake sizes and flavors (menu card)
-7. Rosca de Reyes dates
+7. Rosca de Reyes dates (an every-year range such as "late December to early February" keeps the page evergreen)
 8. Rosca de Reyes sizes, and whether to order ahead
 9. Other seasonal items, and when
 10. Big orders: how many days ahead, and whether ordering ahead is required
@@ -62,15 +66,15 @@ To fill an empty slot, replace its `<div class="photo__slot">…</div>` with `<i
 - Remove the robots `noindex` meta tag and replace robots.txt.
 - Add `url`, `geo` (latitude/longitude), `logo` and `image` to the JSON-LD.
 - Remove the "Preview site" line in the footer.
-- Check the "New" tag on the blueberry lemon loaf is still current.
 
 ## Spanish for a native speaker to check
 
 The Spanish uses usted throughout. Please have a native speaker confirm:
 
-- "Champurrado calientito este fin de semana" / "Champurrado calientito hoy"
+- "Champurrado calientito los fines de semana" and "Todos los viernes, sábados y domingos"
 - "Lo que horneamos" for "What we bake"
-- "Panqué de mora azul y limón" for the blueberry lemon loaf ("mora azul" vs "arándano")
+- "Panqués ... como el de mora azul y limón" for the loaf cakes ("mora azul" vs "arándano")
+- "Vea lo que sale del horno en Instagram y TikTok"
 - "Pedidos grandes y pasteles para fiesta", and "Para pedidos grandes y pasteles para fiesta, llámenos"
 - "Con cuánta anticipación" and "Otras formas de pedir" as labels
 - "Llame al (847) 419-0970" on the call buttons, "Llame para encargar" in the order section
