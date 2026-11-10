@@ -36,7 +36,7 @@ Customers order tres leches and party cakes for holidays and birthdays (one orde
 
 ## Brand Commitments
 
-- The logo is the identity: red line art on cream. The site is built from it (logo red, cream, concha pink, cocoa). Logo file to be supplied as `images/logo.png`.
+- The logo is the identity: red line art on cream. The site is built from it (logo red, cream, concha pink, cocoa). Logo in `images/logo.png`, cropped from their Instagram profile picture.
 - Must not resemble the builder's earlier bakery spec site ("Rótulo") (painted sign blocks, marigold, teal, condensed type).
 - No em dashes in site copy.
 - Avoid clichés: sombreros, cacti, papel picado overload. Avoid generic AI patterns: purple or blue gradients, "Welcome to our bakery" filler, fake testimonials, fake stats, emoji as decoration, stock hero images.

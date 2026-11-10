@@ -251,7 +251,7 @@ address { font-style: normal; }
 /* Logo frame: shows the placeholder until images/logo.png exists */
 .logo {
   position: relative;
-  width: 8.5rem; aspect-ratio: 1;
+  width: 10rem; aspect-ratio: 1;
   border-radius: 50%;
   border: 3px solid var(--red);
   background: var(--pink-lt);
@@ -660,6 +660,7 @@ html.js .dock.is-tucked { transform: translateY(110%); }
 
   .hero { padding-block: 3rem 3.5rem; }
   .hero__card { max-width: 36rem; padding: 2rem 2rem 1.75rem; }
+  .logo { width: 11.5rem; }
 
   /* Tag and ticket sit side by side */
   .pair { display: grid; grid-template-columns: 1fr 1.2fr; gap: 2rem; align-items: center; padding: 2.5rem var(--gutter) 0; }

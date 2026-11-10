@@ -32,7 +32,7 @@ The page is Lupita's own wrapping paper and pastry-box kit, drawn in the same re
 - **Social buttons**: outlined cards with a round red icon, the label and the handle.
 - **Placeholder** `.ph`: pink wash chip, dotted red underline, red "TBD" / "PENDIENTE" label.
 - **Photo slot** `.photo__slot`: pink, dashed frame, a red-pen sketch of the item, a "Photo 1:1" tag in the corner and a description of the shot needed. Sample photos carry a "Sample photo" caption.
-- **Logo frame** `.logo`: red-ringed circle; shows "Logo" until `images/logo.png` exists.
+- **Logo frame** `.logo`: red-ringed circle holding `images/logo.png`; shows "Logo" if the file is missing.
 - **Dock**: fixed red call bar on phones (Call + icon-only directions). Hidden while the hero buttons show, and on desktop, where the number sits in the top bar.
 
 ## Rules

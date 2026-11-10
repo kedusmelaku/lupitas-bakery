@@ -6,7 +6,7 @@ An unlisted one-page spec site for Lupita's Bakery (220 McHenry Rd, Wheeling, IL
 - `styles.css`: the "Papel de envoltura" wrapping-paper look (see `DESIGN.md`)
 - `main.js`: language toggle, live open/closed status (Chicago time), and the call bar
 - `robots.txt` + `<meta name="robots" content="noindex, nofollow">`: keep it out of search
-- `images/`: three sample menu photos as compressed WebP (see `CREDITS.md`); the logo goes here as `logo.png`
+- `images/`: three sample menu photos as compressed WebP (see `CREDITS.md`); plus the logo, `logo.png`
 - `fonts/`: self-hosted Bagel Fat One and Nunito Sans (both SIL Open Font License)
 
 ## Preview
@@ -19,7 +19,7 @@ Then open `http://localhost:8000/`. `?lang=es` opens in Spanish; without it, the
 
 ## Logo
 
-Save the logo as `images/logo.png` (square, at least 480×480). The circle in the hero shows a "Logo" placeholder until the file exists; nothing else needs to change.
+`images/logo.png` (600×600, transparent corners) was cropped from the logo screenshot of their Instagram profile picture. For launch, ask the owner for the original artwork: a vector or high-resolution file will print and scale more cleanly than a screenshot.
 
 ## Keeping it evergreen
 
@@ -47,7 +47,6 @@ Every unconfirmed item is a pink chip with a red "TBD" (Spanish: "PENDIENTE") la
 
 | Slot | Ratio / size | What to shoot |
 |---|---|---|
-| Logo (hero) | 1:1, 480×480+ PNG | The logo file, `images/logo.png` |
 | Pan dulce | 3:2, 1200×800 | Replace the sample: their conchas and pan dulce |
 | Bolillos | 1:1, 960×960 | Replace the sample: their bolillos (cheese and jalapeño, chorizo and cheese) |
 | Churros | 1:1, 960×960 | Churros, filled and plain |

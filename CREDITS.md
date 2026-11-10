@@ -1,4 +1,8 @@
-# Photo and font credits
+# Photo, logo and font credits
+
+## Logo
+
+`images/logo.png` is Lupita's Bakery's own logo, cropped from a screenshot of their Instagram profile picture and saved with transparent corners. It belongs to the bakery.
 
 ## Photos
 
