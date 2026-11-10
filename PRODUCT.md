@@ -43,7 +43,7 @@ Customers order tres leches and party cakes for holidays and birthdays (one orde
 
 ## Evidence on Hand
 
-Verified business facts above (Google listing and Instagram, Nov 2026). Products come from their Instagram posts and Google reviews. Every food photo is a stand-in: three from Wikimedia Commons, five from food blogs (license unknown, replace before launch). The storefront slot is empty. No testimonials, no prices. Never copy reviews. Never make allergen, ingredient or "fresh daily" claims unless confirmed.
+Verified business facts above (Google listing and Instagram, Nov 2026). Products come from their Instagram posts and Google reviews. Every food photo is a stand-in: three from Wikimedia Commons, five from food blogs (license unknown, replace before launch). The storefront is a Google Street View screenshot (replace before launch). No testimonials, no prices. Never copy reviews. Never make allergen, ingredient or "fresh daily" claims unless confirmed.
 
 ## Product Principles
 

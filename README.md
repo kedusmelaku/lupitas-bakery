@@ -45,7 +45,7 @@ Every unconfirmed item is a pink chip with a red "TBD" (Spanish: "PENDIENTE") la
 
 ## Photos to replace
 
-Every food photo is a stand-in tagged "Sample photo" on the page (see `CREDITS.md`). Five came from food blogs with unknown licenses, so they must be replaced before the site goes public.
+Every food photo is a stand-in tagged "Sample photo" on the page (see `CREDITS.md`). Five came from food blogs with unknown licenses, and the storefront is a Google Street View screenshot, so those six must be replaced before the site goes public.
 
 | Slot | Ratio / size | Current | What to shoot |
 |---|---|---|---|
@@ -57,9 +57,9 @@ Every food photo is a stand-in tagged "Sample photo" on the page (see `CREDITS.m
 | Loaf cakes | 1:1, 960×960 | Blog photo, replace | Their blueberry lemon loaf, sliced |
 | Buñuelos | 1:1, 960×960 | Blog photo, replace | Their buñuelos, stacked |
 | Rosca de Reyes | 3:2, 1200×800 | Blog photo, replace | Their Rosca de Reyes, whole |
-| The bakery | 3:2, 1200×800 | **Empty** | The storefront from McHenry Rd, sign visible |
+| The bakery | 3:2, 1200×800 | Street View screenshot, replace | The storefront from McHenry Rd, sign visible |
 
-To fill the storefront slot, replace its `<div class="photo__slot">…</div>` with `<img class="photo__img" src="images/storefront.webp" width="1200" height="800" loading="lazy" decoding="async" alt="…" data-alt-es="…">`.
+To swap a photo, replace the file in `images/` (same name), then update its `width`/`height` and both alt texts in `index.html`.
 
 **Still unknown, not shown on the page:** prices (none on purpose).
 
@@ -67,6 +67,7 @@ To fill the storefront slot, replace its `<div class="photo__slot">…</div>` wi
 - Remove the robots `noindex` meta tag and replace robots.txt.
 - Add `url`, `geo` (latitude/longitude), `logo` and `image` to the JSON-LD.
 - Remove the "Preview site" line in the footer.
+- Replace the five blog photos and the Street View storefront (see `CREDITS.md`).
 
 ## Spanish for a native speaker to check
 

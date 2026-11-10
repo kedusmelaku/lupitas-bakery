@@ -35,9 +35,15 @@ These were added from the web as visual stand-ins. Their filenames point to food
 | `images/bunuelos.webp` (960×960) | Buñuelos | `Bunuelos-12.jpg` |
 | `images/rosca-de-reyes.webp` (996×664) | Rosca de Reyes | `CFYL-Rosca-De-Reyes.jpg` |
 
-**Still empty:** the storefront frame in "The Bakery" section. It needs a real photo of Lupita's storefront on McHenry Rd (3:2, 1200×800). A photo of any other bakery would mislead.
+### Storefront: Google Street View, replace before launch
 
-The line-art sketch in the empty storefront slot and the wrapping-paper pattern were drawn for this site as inline SVG.
+| File on the site | Used for | Source |
+|---|---|---|
+| `images/storefront.webp` (1010×673) | The Bakery | Screenshot of Google Maps Street View, cropped to 3:2 (Google watermarks cropped out) |
+
+This one is the real storefront, so it is not tagged "Sample photo" on the page. But Street View imagery is Google's, and its terms do not allow reuse on a website. Replace it with a photo taken by the owner (or you) before the site goes public.
+
+The wrapping-paper pattern was drawn for this site as inline SVG.
 
 ## Fonts
 
