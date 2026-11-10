@@ -4,53 +4,59 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
-<title>El Chicanito Bakery, Mexican bakery in Palatine, IL</title>
-<meta name="description" content="El Chicanito Bakery, 1164 E Dundee Rd, Palatine, IL. Pan dulce, bolillos, tamales, tres leches cakes and flan. Open every day, 5 AM to 9 PM. Call (847) 221-5447.">
-<meta name="theme-color" content="#1E1813">
+<title>Lupita’s Bakery, Mexican bakery in Wheeling, IL</title>
+<meta name="description" content="Lupita’s Bakery, 220 McHenry Rd, Wheeling, IL. Pan dulce, bolillos, churros, tortas, tres leches and party cakes. Open every day, 5 AM to 10 PM. Call (847) 419-0970.">
+<meta name="theme-color" content="#B03424">
 <meta name="format-detection" content="telephone=no">
 <!--
   Business facts are repeated by hand. If one changes, update every copy:
-  phone (847) 221-5447 / tel:+18472215447, address 1164 E Dundee Rd, Palatine, IL 60074,
-  hours 5 AM to 9 PM (here, the JSON-LD, main.js titles), and the Google Maps link.
+  phone (847) 419-0970 / tel:+18474190970, address 220 McHenry Rd, Wheeling, IL 60090,
+  hours 5 AM to 10 PM (here, the JSON-LD, main.js titles), the Google Maps link,
+  Instagram @lupitasbakeryinc and TikTok @lupitas.bakery.inc.
   Placeholders for the owner to confirm are marked class="ph"; photo slots are class="photo".
 -->
 <script>
-  /* Pick the language before first paint: ?lang= wins, then the saved choice, else English. */
+  /* Pick the language before first paint: ?lang= wins, then the saved choice, then the browser language, else English. */
   (function () {
     var d = document.documentElement, l = null;
     try { l = new URLSearchParams(location.search).get("lang"); } catch (e) {}
     if (l !== "es" && l !== "en") { try { l = localStorage.getItem("lang"); } catch (e) {} }
+    if (l !== "es" && l !== "en") { try { l = /^es\b/i.test((navigator.languages || [navigator.language])[0]) ? "es" : "en"; } catch (e) {} }
     d.lang = l === "es" ? "es" : "en";
     d.className = "js";
   })();
 </script>
-<link rel="preload" href="fonts/anybody-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="fonts/atkinson-next-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/bagel-fat-one-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/nunito-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="styles.css">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <script type="application/ld+json" id="business">
 {
   "@context": "https://schema.org",
   "@type": "Bakery",
-  "name": "El Chicanito Bakery",
-  "alternateName": "Panadería El Chicanito",
+  "name": "Lupita's Bakery",
+  "alternateName": ["Lupita's Bakery Inc.", "Panadería Lupita's"],
   "servesCuisine": "Mexican",
-  "telephone": "+1-847-221-5447",
+  "telephone": "+1-847-419-0970",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "1164 E Dundee Rd",
-    "addressLocality": "Palatine",
+    "streetAddress": "220 McHenry Rd",
+    "addressLocality": "Wheeling",
     "addressRegion": "IL",
-    "postalCode": "60074",
+    "postalCode": "60090",
     "addressCountry": "US"
   },
-  "hasMap": "https://www.google.com/maps/search/?api=1&query=El%20Chicanito%20Bakery%2C%201164%20E%20Dundee%20Rd%2C%20Palatine%2C%20IL%2060074",
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=Lupita%27s%20Bakery%2C%20220%20McHenry%20Rd%2C%20Wheeling%2C%20IL%2060090",
   "openingHoursSpecification": [{
     "@type": "OpeningHoursSpecification",
     "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
     "opens": "05:00",
-    "closes": "21:00"
+    "closes": "22:00"
   }],
+  "sameAs": [
+    "https://www.instagram.com/lupitasbakeryinc/",
+    "https://www.tiktok.com/@lupitas.bakery.inc"
+  ],
   "knowsLanguage": ["es", "en"]
 }
 </script>
@@ -59,8 +65,8 @@
 <a class="skip" href="#top"><span lang="en">Skip to Main Content</span><span lang="es">Ir al contenido</span></a>
 
 <header class="bar">
-  <a class="bar__name" href="#top" translate="no">El Chicanito</a>
-  <a class="bar__tel" href="tel:+18472215447"><span lang="en">Call&nbsp;</span><span lang="es">Llame al&nbsp;</span><span class="nowrap">(847) 221-5447</span></a>
+  <a class="bar__name" href="#top" translate="no">Lupita’s</a>
+  <a class="bar__tel" href="tel:+18474190970"><span lang="en">Call&nbsp;</span><span lang="es">Llame al&nbsp;</span><span class="nowrap">(847) 419-0970</span></a>
   <div class="lang" role="group" aria-label="Language, idioma">
     <button type="button" class="lang__btn" data-set-lang="en" lang="en" aria-pressed="true">English</button>
     <button type="button" class="lang__btn" data-set-lang="es" lang="es" aria-pressed="false">Español</button>
@@ -69,89 +75,79 @@
 
 <main id="top" tabindex="-1">
 
-  <!-- 1. The storefront sign + call -->
-  <section class="front" aria-labelledby="name">
-    <h1 id="name" class="sign" translate="no">
-      <span class="sign__el">El</span>
-      <span class="sign__name">Chicanito</span>
-      <span class="sign__kind"><span lang="en">Mexican bakery</span><span lang="es">Panadería mexicana</span></span>
-    </h1>
-
-    <div class="front__actions" data-hero-actions>
-      <a class="btn btn--call" href="tel:+18472215447">
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
-        <span><span lang="en">Call</span><span lang="es">Llamar</span> <span class="nowrap">(847) 221-5447</span></span>
-      </a>
-      <a class="btn btn--line" href="https://www.google.com/maps/search/?api=1&amp;query=El%20Chicanito%20Bakery%2C%201164%20E%20Dundee%20Rd%2C%20Palatine%2C%20IL%2060074">
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        <span lang="en">Directions</span><span lang="es">Cómo llegar</span>
-      </a>
+  <!-- 1. Hero: the logo, the name, open now, call -->
+  <section class="hero" aria-labelledby="name">
+    <div class="hero__card">
+      <div class="logo">
+        <!-- The logo file goes at images/logo.png (square, at least 480×480). Until it exists, the frame shows the placeholder. -->
+        <img class="logo__img" src="images/logo.png" width="480" height="480" alt="" decoding="async" fetchpriority="high" onerror="this.remove()">
+        <span class="logo__ph" aria-hidden="true">Logo</span>
+      </div>
+      <h1 id="name" class="hero__name" translate="no">Lupita’s <span class="nowrap">Bakery</span></h1>
+      <p class="hero__kind"><span lang="en">Mexican bakery in Wheeling, IL</span><span lang="es">Panadería mexicana en Wheeling, IL</span></p>
+      <p class="status" data-status aria-live="polite" hidden>
+        <span class="status__dot" aria-hidden="true"></span>
+        <span lang="en" data-status-en></span><span lang="es" data-status-es></span>
+      </p>
+      <div class="hero__actions" data-hero-actions>
+        <a class="btn btn--call" href="tel:+18474190970">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+          <span><span lang="en">Call</span><span lang="es">Llame al</span> <span class="nowrap">(847) 419-0970</span></span>
+        </a>
+        <a class="btn btn--line" href="https://www.google.com/maps/search/?api=1&amp;query=Lupita%27s%20Bakery%2C%20220%20McHenry%20Rd%2C%20Wheeling%2C%20IL%2060090">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span lang="en">Get Directions</span><span lang="es">Cómo llegar</span>
+        </a>
+      </div>
     </div>
   </section>
 
-  <!-- 2. Hours and directions -->
+  <div class="pair">
+  <!-- 2. This weekend: hot champurrado (Friday to Sunday) -->
+  <aside class="weekend" aria-labelledby="weekend-h">
+    <div class="tag">
+      <h2 id="weekend-h" class="tag__title"><span lang="en">Hot Champurrado <span class="tag__when" data-when-en>This Weekend</span></span><span lang="es">Champurrado calientito <span class="tag__when" data-when-es>este fin de semana</span></span></h2>
+      <p class="tag__days"><span lang="en">Friday to Sunday</span><span lang="es">De viernes a domingo</span></p>
+    </div>
+  </aside>
+
+  <!-- 3. Hours and directions: the ticket -->
   <section class="visit" id="visit" aria-labelledby="visit-h">
-    <div class="board">
-      <div class="board__when">
-        <h2 id="visit-h" class="board__title">
-          <span lang="en">Walk-ins welcome every day</span><span lang="es">Pase cuando guste, todos los días</span>
-        </h2>
-        <p class="board__hours">
-          <span lang="en">5&nbsp;AM <small>to</small> 9&nbsp;PM</span><span lang="es">5&nbsp;a.m. <small>a</small> 9&nbsp;p.m.</span>
-        </p>
-        <p class="status" data-status aria-live="polite" hidden>
-          <span class="status__dot" aria-hidden="true"></span>
-          <span lang="en" data-status-en></span><span lang="es" data-status-es></span>
-        </p>
+    <div class="ticket">
+      <h2 id="visit-h" class="ticket__title"><span lang="en">Open Every Day</span><span lang="es">Abierto todos los días</span></h2>
+      <p class="ticket__hours">
+        <span lang="en">5&nbsp;AM <small>to</small> 10&nbsp;PM</span><span lang="es">5&nbsp;a.m. <small>a</small> 10&nbsp;p.m.</span>
+      </p>
+      <div class="ticket__where">
+        <address translate="no">220 McHenry Rd<br>Wheeling, IL 60090</address>
+        <a class="link link--pad" href="https://www.google.com/maps/search/?api=1&amp;query=Lupita%27s%20Bakery%2C%20220%20McHenry%20Rd%2C%20Wheeling%2C%20IL%2060090"><span lang="en">Get Directions</span><span lang="es">Cómo llegar</span></a>
       </div>
-      <div class="board__where">
-        <address translate="no">1164 E Dundee Rd<br>Palatine, IL 60074</address>
-        <p class="board__near"><span lang="en">Near Dundee Rd and Rand Rd</span><span lang="es">Cerca de Dundee y Rand</span></p>
-      </div>
-      <p class="board__note">
-        <span lang="en">Holiday hours:</span><span lang="es">Horario en días festivos:</span>
-        <span class="ph"><span lang="en">owner to confirm</span><span lang="es">por confirmar</span></span>
+      <p class="ticket__note">
+        <span lang="en">Holiday hours may differ.</span><span lang="es">El horario puede cambiar en días festivos.</span>
+        <span class="ph"><span lang="en">holiday schedule</span><span lang="es">horario de días festivos</span></span>
       </p>
     </div>
   </section>
 
-  <!-- 3. What they sell, by category, photo first -->
+  </div>
+
+  <!-- 4. What they bake, photo first -->
   <section class="menu" id="menu" aria-labelledby="menu-h">
     <div class="menu__head">
-      <h2 id="menu-h" class="menu__title"><span lang="en">What we sell</span><span lang="es">Lo que vendemos</span></h2>
+      <h2 id="menu-h" class="title"><span lang="en">What We Bake</span><span lang="es">Lo que horneamos</span></h2>
       <p class="menu__note"><span lang="en">Ask for prices at the counter or by phone.</span><span lang="es">Pregunte por los precios en el mostrador o por teléfono.</span></p>
     </div>
 
     <ul class="tray">
       <li class="item item--feature">
-        <figure class="photo" style="--ratio: 3 / 2">
+        <figure class="photo photo--feature">
           <img class="photo__img" src="images/pan-dulce-conchas.webp" width="960" height="640" loading="lazy" decoding="async"
                alt="A rack of conchas, Mexican sweet bread rolls with crackled vanilla, chocolate and pink sugar tops"
                data-alt-es="Un estante de conchas, pan dulce mexicano con costra de azúcar de vainilla, chocolate y rosa">
           <figcaption class="photo__sample"><span lang="en">Sample photo</span><span lang="es">Foto de muestra</span></figcaption>
         </figure>
         <h3 class="item__name">Pan dulce</h3>
-        <p class="item__desc"><span lang="en">Conchas and assorted sweet bread.</span><span lang="es">Conchas y pan dulce surtido.</span> <span class="ph"><span lang="en">other breads by name</span><span lang="es">nombres de los demás panes</span></span></p>
-      </li>
-      <li class="item">
-        <figure class="photo" style="--ratio: 1 / 1">
-          <img class="photo__img" src="images/tres-leches.webp" width="960" height="960" loading="lazy" decoding="async"
-               alt="A tres leches cake in a glass pan, topped with whipped cream and maraschino cherries"
-               data-alt-es="Un pastel de tres leches en un refractario, cubierto de crema batida y cerezas">
-          <figcaption class="photo__sample"><span lang="en">Sample photo</span><span lang="es">Foto de muestra</span></figcaption>
-        </figure>
-        <h3 class="item__name"><span lang="en">Cakes</span><span lang="es">Pasteles</span></h3>
-        <p class="item__desc"><span lang="en">Tres leches, chocolate or vanilla. Birthday and custom cakes.</span><span lang="es">De tres leches, de chocolate o de vainilla. De cumpleaños y sobre pedido.</span></p>
-      </li>
-      <li class="item">
-        <figure class="photo" style="--ratio: 1 / 1">
-          <img class="photo__img" src="images/tamales.webp" width="720" height="720" loading="lazy" decoding="async"
-               alt="A pot of tamales wrapped in corn husks, standing upright"
-               data-alt-es="Una olla de tamales envueltos en hojas de maíz, parados">
-          <figcaption class="photo__sample"><span lang="en">Sample photo</span><span lang="es">Foto de muestra</span></figcaption>
-        </figure>
-        <h3 class="item__name">Tamales</h3>
-        <p class="item__desc"><span lang="en">Pork, pepper and cheese (rajas con queso), sweet pineapple.</span><span lang="es">De puerco, de rajas con queso, dulces de piña.</span></p>
+        <p class="item__desc"><span lang="en">Conchas and more sweet bread.</span><span lang="es">Conchas y más pan dulce.</span> <span class="ph"><span lang="en">other breads by name</span><span lang="es">nombres de los demás panes</span></span></p>
       </li>
       <li class="item">
         <figure class="photo" style="--ratio: 1 / 1">
@@ -161,88 +157,146 @@
           <figcaption class="photo__sample"><span lang="en">Sample photo</span><span lang="es">Foto de muestra</span></figcaption>
         </figure>
         <h3 class="item__name">Bolillos</h3>
-        <p class="item__desc"><span lang="en">Plain, or with cheese and jalapeño.</span><span lang="es">Solos o con queso y jalapeño.</span></p>
+        <p class="item__desc"><span lang="en">Plain, cheese and jalapeño, or chorizo and cheese.</span><span lang="es">Solos, de queso con jalapeño o de chorizo con queso.</span></p>
       </li>
       <li class="item">
         <figure class="photo" style="--ratio: 1 / 1">
-          <img class="photo__img" src="images/flan.webp" width="960" height="960" loading="lazy" decoding="async"
-               alt="A whole flan glazed with caramel sauce on a striped plate"
-               data-alt-es="Un flan entero bañado en caramelo sobre un plato de rayas">
-          <figcaption class="photo__sample"><span lang="en">Sample photo</span><span lang="es">Foto de muestra</span></figcaption>
+          <div class="photo__slot">
+            <svg class="photo__art" viewBox="0 0 64 64" aria-hidden="true"><rect x="21" y="8" width="8" height="46" rx="4" transform="rotate(28 25 31)"/><rect x="35" y="12" width="8" height="46" rx="4" transform="rotate(28 39 35)"/><path d="M23 20h6M22 28h7M21 36h7M20 44h7" transform="rotate(28 25 31)"/><path d="M37 24h6M36 32h7M35 40h7M34 48h7" transform="rotate(28 39 35)"/></svg>
+            <span class="photo__tag"><span lang="en">Photo</span><span lang="es">Foto</span> 1:1</span>
+            <span class="photo__what"><span lang="en">Churros, filled and plain</span><span lang="es">Churros, rellenos y solos</span></span>
+          </div>
         </figure>
-        <h3 class="item__name"><span lang="en">Flan &amp; gelatinas</span><span lang="es">Flan y gelatinas</span></h3>
-        <p class="item__desc"><span lang="en">Flan by the slice or whole. Tres leches gelatinas.</span><span lang="es">Flan por rebanada o entero. Gelatinas de tres leches.</span></p>
+        <h3 class="item__name">Churros</h3>
+        <p class="item__desc"><span lang="en">Plain, or filled with strawberry or vanilla.</span><span lang="es">Solos o rellenos de fresa o de vainilla.</span></p>
       </li>
       <li class="item">
         <figure class="photo" style="--ratio: 1 / 1">
-          <img class="photo__img" src="images/empanada-pina.webp" width="851" height="851" loading="lazy" decoding="async"
-               alt="A sugar-dusted pineapple empanada on a painted plate"
-               data-alt-es="Una empanada de piña espolvoreada con azúcar sobre un plato pintado">
-          <figcaption class="photo__sample"><span lang="en">Sample photo</span><span lang="es">Foto de muestra</span></figcaption>
+          <div class="photo__slot">
+            <svg class="photo__art" viewBox="0 0 64 64" aria-hidden="true"><path d="M8 30c0-10 11-16 24-16s24 6 24 16z"/><path d="M8 35c4 3 8-3 12 0s8-3 12 0 8-3 12 0 8-3 12 0"/><path d="M9 40h46v4a6 6 0 0 1-6 6H15a6 6 0 0 1-6-6z"/><path d="M22 20l2 3M32 18v3M42 20l-2 3"/></svg>
+            <span class="photo__tag"><span lang="en">Photo</span><span lang="es">Foto</span> 1:1</span>
+            <span class="photo__what"><span lang="en">A torta de milanesa, cut in half</span><span lang="es">Una torta de milanesa, partida a la mitad</span></span>
+          </div>
         </figure>
-        <h3 class="item__name">Empanadas</h3>
-        <p class="item__desc"><span class="ph"><span lang="en">fillings</span><span lang="es">rellenos</span></span></p>
+        <h3 class="item__name">Tortas</h3>
+        <p class="item__desc"><span lang="en">Including torta de milanesa.</span><span lang="es">Como la torta de milanesa.</span> <span class="ph"><span lang="en">other tortas</span><span lang="es">otras tortas</span></span></p>
       </li>
       <li class="item">
         <figure class="photo" style="--ratio: 1 / 1">
-          <img class="photo__img" src="images/jarritos.webp" width="1080" height="1080" loading="lazy" decoding="async"
-               alt="A glass bottle of Jarritos soda on a table"
-               data-alt-es="Una botella de vidrio de refresco Jarritos sobre una mesa">
+          <div class="photo__slot">
+            <svg class="photo__art" viewBox="0 0 64 64" aria-hidden="true"><path d="M8 50V30c0-8 6-12 14-12h20c8 0 14 4 14 12v20z"/><path d="M20 18v32M32 18v32M44 18v32"/><circle cx="14" cy="38" r="1.6"/><circle cx="26" cy="30" r="1.6"/><circle cx="38" cy="40" r="1.6"/><circle cx="50" cy="32" r="1.6"/></svg>
+            <span class="photo__tag"><span lang="en">Photo</span><span lang="es">Foto</span> 1:1</span>
+            <span class="photo__what"><span lang="en">The blueberry lemon loaf, sliced</span><span lang="es">El panqué de mora azul y limón, rebanado</span></span>
+          </div>
+        </figure>
+        <h3 class="item__name"><span lang="en">Loaf Cakes</span><span lang="es">Panqués</span></h3>
+        <p class="item__desc"><span class="new"><span lang="en">New</span><span lang="es">Nuevo</span></span> <span lang="en">Blueberry lemon loaf.</span><span lang="es">Panqué de mora azul y limón.</span> <span class="ph"><span lang="en">other flavors</span><span lang="es">otros sabores</span></span></p>
+      </li>
+      <li class="item">
+        <figure class="photo" style="--ratio: 1 / 1">
+          <div class="photo__slot">
+            <svg class="photo__art" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="34" r="22"/><path d="M20 28c3-3 6 0 9-3M33 24c3 2 6-1 9 2M18 40c3 2 6-1 9 2M34 40c3-2 6 1 9-2M26 33c2 2 5 0 7 2"/><path d="M12 12l2 2M50 10l2 2M54 50l2 2"/></svg>
+            <span class="photo__tag"><span lang="en">Photo</span><span lang="es">Foto</span> 1:1</span>
+            <span class="photo__what"><span lang="en">Buñuelos, stacked</span><span lang="es">Buñuelos apilados</span></span>
+          </div>
+        </figure>
+        <h3 class="item__name">Buñuelos</h3>
+        <p class="item__desc"><span class="ph"><span lang="en">description</span><span lang="es">descripción</span></span></p>
+      </li>
+      <li class="item">
+        <figure class="photo" style="--ratio: 1 / 1">
+          <img class="photo__img" src="images/tres-leches.webp" width="960" height="960" loading="lazy" decoding="async"
+               alt="A tres leches cake in a glass pan, topped with whipped cream and maraschino cherries"
+               data-alt-es="Un pastel de tres leches en un refractario, cubierto de crema batida y cerezas">
           <figcaption class="photo__sample"><span lang="en">Sample photo</span><span lang="es">Foto de muestra</span></figcaption>
         </figure>
-        <h3 class="item__name"><span lang="en">Drinks</span><span lang="es">Bebidas</span></h3>
-        <p class="item__desc"><span lang="en">Jarritos and other drinks.</span><span lang="es">Jarritos y otras bebidas.</span></p>
+        <h3 class="item__name"><span lang="en">Cakes</span><span lang="es">Pasteles</span></h3>
+        <p class="item__desc"><span lang="en">Tres leches and party cakes.</span><span lang="es">Pasteles de tres leches y para fiestas.</span> <span class="ph"><span lang="en">sizes and flavors</span><span lang="es">tamaños y sabores</span></span></p>
       </li>
     </ul>
   </section>
 
-  <!-- 4. Big orders (smaller; ordering policy not confirmed) -->
+  <!-- 5. Seasonal: Rosca de Reyes -->
+  <section class="season" id="seasonal" aria-labelledby="season-h">
+    <div class="season__inner">
+      <h2 id="season-h" class="title"><span lang="en">Seasonal</span><span lang="es">De temporada</span></h2>
+      <article class="rosca">
+        <figure class="photo" style="--ratio: 3 / 2">
+          <div class="photo__slot">
+            <svg class="photo__art" viewBox="0 0 64 64" aria-hidden="true"><ellipse cx="32" cy="34" rx="26" ry="16"/><ellipse cx="32" cy="34" rx="12" ry="6"/><path d="M12 30l6-4M26 21l8 0M44 23l7 4M48 42l6-4M28 48h9M10 38l5 4"/></svg>
+            <span class="photo__tag"><span lang="en">Photo</span><span lang="es">Foto</span> 3:2</span>
+            <span class="photo__what"><span lang="en">A Lupita’s Rosca de Reyes, whole</span><span lang="es">Una Rosca de Reyes de Lupita’s, entera</span></span>
+          </div>
+        </figure>
+        <div class="rosca__text">
+          <h3 class="rosca__name">Rosca de Reyes</h3>
+          <p><span lang="en">The ring-shaped sweet bread for Día de Reyes.</span><span lang="es">La rosca para el Día de Reyes.</span></p>
+          <dl class="terms">
+            <div><dt><span lang="en">When</span><span lang="es">Cuándo</span></dt><dd><span class="ph"><span lang="en">dates</span><span lang="es">fechas</span></span></dd></div>
+            <div><dt><span lang="en">Sizes</span><span lang="es">Tamaños</span></dt><dd><span class="ph"><span lang="en">sizes, and whether to order ahead</span><span lang="es">tamaños y si hay que encargarla</span></span></dd></div>
+          </dl>
+        </div>
+      </article>
+      <p class="season__more"><span lang="en">More seasonal treats:</span><span lang="es">Otros panes de temporada:</span> <span class="ph"><span lang="en">which ones, and when</span><span lang="es">cuáles y cuándo</span></span></p>
+    </div>
+  </section>
+
+  <!-- 6. Big orders and party cakes (ordering process not confirmed) -->
   <section class="order" id="order" aria-labelledby="order-h">
-    <div class="slip">
-      <h2 id="order-h" class="slip__title"><span lang="en">Big orders</span><span lang="es">Pedidos grandes</span></h2>
-      <p class="slip__lede"><span class="ph"><span lang="en">Call ahead for whole cakes, whole flan, and tamales by the dozen.</span><span lang="es">Llame con anticipación para pasteles enteros, flan entero y tamales por docena.</span></span></p>
-      <ul class="slip__facts">
-        <li><span lang="en">Whole tres leches cakes, chocolate or vanilla, plus birthday and custom cakes</span><span lang="es">Pasteles enteros de tres leches, de chocolate o de vainilla, y pasteles de cumpleaños o sobre pedido</span></li>
-        <li><span lang="en">Whole flan for parties</span><span lang="es">Flan entero para fiestas</span></li>
-        <li><span lang="en">Tamales by the dozen: pork, rajas con queso, sweet pineapple</span><span lang="es">Tamales por docena: de puerco, de rajas con queso, dulces de piña</span></li>
-      </ul>
-      <dl class="slip__terms">
-        <div><dt><span lang="en">Order ahead</span><span lang="es">Encargar antes</span></dt><dd><span class="ph"><span lang="en">required or just recommended?</span><span lang="es">¿obligatorio o solo recomendado?</span></span></dd></div>
-        <div><dt><span lang="en">Notice</span><span lang="es">Anticipación</span></dt><dd><span class="ph"><span lang="en">how many days or hours ahead</span><span lang="es">cuántos días u horas antes</span></span></dd></div>
-        <div><dt><span lang="en">Tamale days</span><span lang="es">Días de tamales</span></dt><dd><span class="ph"><span lang="en">which days tamales are available</span><span lang="es">qué días hay tamales</span></span></dd></div>
-        <div><dt><span lang="en">Cakes</span><span lang="es">Pasteles</span></dt><dd><span class="ph"><span lang="en">sizes, other flavors, deposit</span><span lang="es">tamaños, otros sabores, anticipo</span></span></dd></div>
-        <div><dt><span lang="en">Seasonal</span><span lang="es">De temporada</span></dt><dd><span class="ph"><span lang="en">Christmas tamales, Rosca de Reyes, pan de muerto</span><span lang="es">tamales navideños, Rosca de Reyes, pan de muerto</span></span></dd></div>
+    <div class="box">
+      <h2 id="order-h" class="box__title"><span lang="en">Big Orders &amp; Party Cakes</span><span lang="es">Pedidos grandes y pasteles para fiesta</span></h2>
+      <p class="box__lede"><span lang="en">For big orders and party cakes, call us.</span><span lang="es">Para pedidos grandes y pasteles para fiesta, llámenos.</span></p>
+      <dl class="terms">
+        <div><dt><span lang="en">How far ahead</span><span lang="es">Con cuánta anticipación</span></dt><dd><span class="ph"><span lang="en">days of notice, and whether it is required</span><span lang="es">días de anticipación y si es obligatorio</span></span></dd></div>
+        <div><dt><span lang="en">Cakes</span><span lang="es">Pasteles</span></dt><dd><span class="ph"><span lang="en">sizes and flavors</span><span lang="es">tamaños y sabores</span></span></dd></div>
+        <div><dt><span lang="en">Other ways to order</span><span lang="es">Otras formas de pedir</span></dt><dd><span class="ph"><span lang="en">in person, Instagram messages?</span><span lang="es">¿en persona, mensajes de Instagram?</span></span></dd></div>
       </dl>
-      <p class="slip__tell"><span lang="en">When you call, tell us what you want, how many, and the day and time you’ll pick it up.</span><span lang="es">Cuando llame, díganos qué quiere, cuántos y el día y la hora en que pasa a recoger.</span></p>
-      <a class="btn btn--call btn--wide" href="tel:+18472215447">
+      <a class="btn btn--call btn--wide" href="tel:+18474190970">
         <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
-        <span class="btn__stack"><span><span lang="en">Call About an Order</span><span lang="es">Llame para encargar</span></span> <span class="btn__num">(847) 221-5447</span></span>
+        <span class="btn__stack"><span><span lang="en">Call About an Order</span><span lang="es">Llame para encargar</span></span> <span class="btn__num">(847) 419-0970</span></span>
       </a>
     </div>
   </section>
 
-  <!-- 5. About -->
+  <!-- 7. About -->
   <section class="about" aria-labelledby="about-h">
     <div class="about__text">
-      <h2 id="about-h" class="about__title"><span lang="en">The bakery</span><span lang="es">La panadería</span></h2>
-      <p><span class="ph"><span lang="en">Owner’s story: who started El Chicanito, when, and why. Owner to write or approve.</span><span lang="es">La historia: quién fundó El Chicanito, cuándo y por qué. El dueño la escribe o la aprueba.</span></span></p>
+      <h2 id="about-h" class="title"><span lang="en">The Bakery</span><span lang="es">La panadería</span></h2>
+      <p><span class="ph"><span lang="en">Owner’s name and story: who started Lupita’s, when, and why. Owner to write or approve.</span><span lang="es">El nombre y la historia de la dueña o el dueño: quién fundó Lupita’s, cuándo y por qué. Lo escribe o lo aprueba.</span></span></p>
     </div>
     <figure class="photo" style="--ratio: 3 / 2">
-      <!-- Replace with: <img src="photos/storefront.jpg" width="1200" height="800" alt="El Chicanito Bakery storefront on Dundee Rd" loading="lazy"> -->
+      <!-- Replace with: <img src="images/storefront.webp" width="1200" height="800" alt="Lupita's Bakery storefront on McHenry Rd" data-alt-es="La fachada de Lupita's Bakery en McHenry Rd" loading="lazy"> -->
       <div class="photo__slot">
+            <svg class="photo__art" viewBox="0 0 64 64" aria-hidden="true"><path d="M8 26h48v28H8z"/><path d="M6 26l4-12h44l4 12"/><path d="M6 26c0 4 7 4 7 0 0 4 7 4 7 0 0 4 7 4 7 0 0 4 7 4 7 0 0 4 7 4 7 0 0 4 7 4 7 0 0 4 7 4 7 0 0 4 7 4 7 0"/><path d="M14 54V36h12v18M32 36h18v12H32z"/></svg>
         <span class="photo__tag"><span lang="en">Photo</span><span lang="es">Foto</span> 3:2</span>
-        <span class="photo__what"><span lang="en">The storefront from Dundee Rd, sign visible</span><span lang="es">La fachada desde Dundee Rd, con el letrero</span></span>
+        <span class="photo__what"><span lang="en">The storefront from McHenry Rd, sign visible</span><span lang="es">La fachada desde McHenry Rd, con el letrero</span></span>
       </div>
     </figure>
   </section>
+  <!-- 8. Follow -->
+  <section class="follow" aria-labelledby="follow-h">
+    <h2 id="follow-h" class="title"><span lang="en">Follow Along</span><span lang="es">Síganos</span></h2>
+    <p class="follow__note"><span lang="en">Follow along for new bakes, like the blueberry lemon loaf.</span><span lang="es">Síganos para ver los panes nuevos, como el panqué de mora azul y limón.</span></p>
+    <div class="follow__links">
+      <a class="social" href="https://www.instagram.com/lupitasbakeryinc/" rel="noopener">
+        <svg class="social__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" class="dot"/></svg>
+        <span class="social__text"><span class="social__label"><span lang="en">Follow on Instagram</span><span lang="es">Síganos en Instagram</span></span><span class="social__handle" translate="no">@lupitasbakeryinc</span></span>
+      </a>
+      <a class="social" href="https://www.tiktok.com/@lupitas.bakery.inc" rel="noopener">
+        <svg class="social__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.4 2.6 2.3 4.5 5 4.8"/></svg>
+        <span class="social__text"><span class="social__label"><span lang="en">Follow on TikTok</span><span lang="es">Síganos en TikTok</span></span><span class="social__handle" translate="no">@lupitas.bakery.inc</span></span>
+      </a>
+    </div>
+  </section>
+
 </main>
 
 <footer class="close">
-  <p class="close__name" translate="no">El Chicanito <span>Bakery</span></p>
+  <p class="close__name" translate="no">Lupita’s Bakery</p>
   <address class="close__addr">
-    <span translate="no">1164 E Dundee Rd, Palatine, IL 60074</span><br>
-    <a href="tel:+18472215447">(847) 221-5447</a><br>
-    <span lang="en">Every day, 5&nbsp;AM to 9&nbsp;PM</span><span lang="es">Todos los días, de 5&nbsp;a.m. a 9&nbsp;p.m.</span>
+    <span translate="no">220 McHenry Rd, Wheeling, IL 60090</span><br>
+    <a href="tel:+18474190970">(847) 419-0970</a><br>
+    <span lang="en">Every day, 5&nbsp;AM to 10&nbsp;PM</span><span lang="es">Todos los días, de 5&nbsp;a.m. a 10&nbsp;p.m.</span>
   </address>
   <div class="lang lang--close" role="group" aria-label="Language, idioma">
     <button type="button" class="lang__btn" data-set-lang="en" lang="en" aria-pressed="true">English</button>
@@ -252,13 +306,13 @@
 </footer>
 
 <div class="dock" data-dock>
-  <a class="dock__call" href="tel:+18472215447">
+  <a class="dock__call" href="tel:+18474190970">
     <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
-    <span><span lang="en">Call</span><span lang="es">Llamar</span> <span class="nowrap">(847) 221-5447</span></span>
+    <span><span lang="en">Call</span><span lang="es">Llame al</span> <span class="nowrap">(847) 419-0970</span></span>
   </a>
-  <a class="dock__map" href="https://www.google.com/maps/search/?api=1&amp;query=El%20Chicanito%20Bakery%2C%201164%20E%20Dundee%20Rd%2C%20Palatine%2C%20IL%2060074">
+  <a class="dock__map" href="https://www.google.com/maps/search/?api=1&amp;query=Lupita%27s%20Bakery%2C%20220%20McHenry%20Rd%2C%20Wheeling%2C%20IL%2060090">
     <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
-    <span><span lang="en">Map</span><span lang="es">Mapa</span></span>
+    <span class="sr-only"><span lang="en">Get Directions</span><span lang="es">Cómo llegar</span></span>
   </a>
 </div>
 

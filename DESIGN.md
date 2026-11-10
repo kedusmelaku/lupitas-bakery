@@ -1,37 +1,42 @@
-# Design: Rótulo (hand-painted storefront sign)
+# Design: Papel de envoltura (bakery wrapping paper)
 
-The page reads as the bakery's own painted signage, seen on a phone.
+The page is Lupita's own wrapping paper and pastry-box kit, drawn in the same red pen as their logo (a smiling chef holding a birthday cake, red line art on a cream circle).
 
 ## Color tokens (`styles.css :root`)
 | Token | Value | Role |
 |---|---|---|
-| `--wall` | #F3E9D6 | Painted wall ground, with a faint grain |
-| `--red` | #C8361F | Sign field (hero and footer) |
-| `--red-ink` | #A82B17 | Red text on light grounds (5.8:1 on the wall) |
-| `--shade` | #6E1B0D | Drop shade under the sign letters |
-| `--marigold` | #E8A317 | Order field, call buttons |
-| `--sign-yellow` | #FFD34D | Yellow lettering on teal/ink; on red only at large sizes (3.7:1) |
-| `--teal` | #1F5E5B | Hours board |
-| `--ink` | #1E1813 | Text, top bar, menu board, call dock |
-| `--cream` | #FFF4E2 | Text on red/teal/ink (4.8:1 on red) |
-| `--ph-*` | ink-soft text, marigold underline, #855A00 label | Placeholders (cream/sign-yellow on the teal board) |
+| `--cream` | #FBF3E4 | Page ground, sampled toward the logo's cream circle |
+| `--white` | #FFFDF8 | Card fill |
+| `--red` | #B03424 | Logo red: name, titles, outlines, Call buttons, top bar, order field (5.7:1 with cream either way) |
+| `--red-deep` | #9E2B1D | Red text on pink (4.9:1) and small labels |
+| `--red-press` | #7A2117 | The pressed edge under Call buttons, the order label's shadow |
+| `--pink` | #F4C7CF | Concha pink: gift tag, seasonal panel, card offset shadows, doily scallops. Cocoa text only (9.4:1) |
+| `--pink-lt` | #FBE3E7 | Placeholder chips, photo slots, open-now pill |
+| `--cocoa` | #3B2620 | Text, footer |
+| `--cocoa-soft` | #6B4A40 | Secondary text (7.1:1 on cream) |
 
 ## Type
-- Display: **Anybody** (variable, wdth 50–150, wght 100–900). The name uses wdth 64 / 850 with an ink outline and a 6-step drop shade; section titles use wdth 50–70 / 900, uppercase; small labels use wide widths (120–150%) with letter-spacing.
-- Body: **Atkinson Hyperlegible Next** at 18px / 1.5.
+- Display: **Bagel Fat One** (one weight), chunky and rounded. The name, section titles, product names, hours.
+- Body: **Nunito Sans** (variable 200 to 1000) at 18px / 1.5. Labels are 900 weight, uppercase, light tracking, never below 14px.
+- Both self-hosted from `fonts/` (SIL Open Font License).
 
 ## Components
-- **Painted field:** a full-bleed section in one color (red, teal board, marigold, ink board).
-- **Pinstripe:** `outline` 2px with a negative offset inside boards.
-- **Slip:** paper card with a dashed top edge (torn from the pad) and a soft shadow.
-- **Pad:** numbered order checklist; ruled lines follow the items.
-- **Buttons:** 56px tall, 3px ink border, marigold fill (call) or cream outline on red.
-- **Placeholder** `.ph`: dark brown bold text, 2px dotted mustard underline, small-caps mustard "TBD" / "Pendiente" label.
-- **Photo slot** `.photo`: aspect-ratio frame with corner crop marks.
-- **Dock:** fixed call bar on phones. It is hidden while the hero buttons are visible, and hidden entirely on desktop, where the phone number sits in the top bar.
+- **Wrapping paper** `--tile`: a 150px line-art tile (concha, churro, bolillo, cake) in red at low opacity. Stronger (`--tile-strong`) behind the hero, cream (`--tile-light`) on the red order field and the cocoa footer.
+- **Card**: white fill, 2.5px red outline, 22px radius, flat 7px pink offset shadow (the hero card).
+- **Doily edge**: pink half-circle scallops under the hero and over the seasonal panel.
+- **Gift tag** `.tag`: pink tag with a string hole; the heading ends in the day ("This Weekend", or "Today" Friday to Sunday, Chicago time). Swings once on load.
+- **Ticket** `.ticket`: hours at display size, perforated rule, side notches, address and directions.
+- **Cake box label** `.box`: white label with a dashed cut line, on the red wrapping paper.
+- **Buttons**: 56px tall, 16px radius. Call is solid red with a darker pressed edge; secondary is white with a red outline.
+- **Social buttons**: outlined cards with a round red icon, the label and the handle.
+- **Placeholder** `.ph`: pink wash chip, dotted red underline, red "TBD" / "PENDIENTE" label.
+- **Photo slot** `.photo__slot`: pink, dashed frame, a red-pen sketch of the item, a "Photo 1:1" tag in the corner and a description of the shot needed. Sample photos carry a "Sample photo" caption.
+- **Logo frame** `.logo`: red-ringed circle; shows "Logo" until `images/logo.png` exists.
+- **Dock**: fixed red call bar on phones (Call + icon-only directions). Hidden while the hero buttons show, and on desktop, where the number sits in the top bar.
 
 ## Rules
-- Focus ring: 3px, color set per field through `--focus`.
-- One motion only: the sign's drop shade paints in on load (skipped under reduced motion).
-- Bilingual: every string is an EN/ES pair of `lang` spans; CSS hides the inactive language.
+- Focus ring: 3px, color per field through `--focus`.
+- One motion: the gift tag swings once (skipped under reduced motion).
+- Bilingual: every string is an EN/ES pair of `lang` spans; CSS hides the inactive language. Default comes from `?lang=`, then the saved choice, then the browser language.
 - No em dashes, no prices, no unconfirmed claims.
+- Must never resemble the earlier "Rótulo" site: no painted sign blocks, marigold, teal or condensed type.

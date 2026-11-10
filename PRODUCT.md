@@ -8,50 +8,51 @@ web
 
 ## Stack
 
-Plain static HTML, CSS and minimal vanilla JS. No framework, no build step. Fonts self-hosted from `fonts/`. (Confirmed by the user in the brief.)
+Plain static HTML, CSS and minimal vanilla JS. No framework, no build step. Fonts self-hosted from `fonts/`.
 
 ## Users
 
-Neighborhood regulars of a Mexican panadería in Palatine, IL, many Spanish-speaking, plus English speakers. Almost all on phones, often deciding on the spot: call to place an order, check whether the bakery is open, or get directions. A second audience for this spec version is the owner, who will see it on the builder's phone before a pitch.
+Neighborhood regulars of a Mexican panadería in Wheeling, IL, many Spanish-speaking, plus English speakers. Almost all on phones, often deciding on the spot: call about a cake, check whether the bakery is open, get directions, or see if there is champurrado this weekend. A second audience for this spec version is the owner, who will see it on the builder's phone before a pitch.
 
 ## Product Purpose
 
-A spec website for El Chicanito Bakery, which has no website today. Page goals, in order (revised by the user after the first build): 1) tap to call, always within reach on mobile; 2) hours and directions, walk-ins welcome every day 5 AM to 9 PM; 3) what they sell by category, with photos high on the page; 4) a smaller Big orders section for whole cakes, whole flan and tamales by the dozen, whose ordering wording is a placeholder (unconfirmed whether ordering ahead is required or recommended, how much notice, which tamale days).
+A spec website for Lupita's Bakery (Instagram: Lupita's Bakery Inc.), which has no website today. Page goals, in order: 1) tap to call, always within reach on mobile; 2) hours and directions, open every day 5 AM to 10 PM; 3) what they bake, with photos; 4) the weekend champurrado and seasonal Rosca de Reyes; 5) a neutral "For big orders and party cakes, call us" section whose details are placeholders; 6) Instagram and TikTok follow links.
 
 ## Positioning
 
-The one bakery at 1164 E Dundee Rd, Palatine, IL 60074 (near Dundee and Rand Rd), phone (847) 221-5447, open every day 5:00 AM to 9:00 PM. Some directories wrongly link to La Chicanita in Aurora, so name, address and phone must be unmistakable everywhere.
+The bakery at 220 McHenry Rd, Wheeling, IL 60090, phone (847) 419-0970, open every day 5:00 AM to 10:00 PM (holiday hours may differ). Instagram @lupitasbakeryinc, TikTok @lupitas.bakery.inc. Identity comes from their logo: a red line drawing of a smiling chef holding a birthday cake, on a cream circle; the chef's hat reads "Lupita's Bakery".
 
 ## Operating Context
 
-Customers pre-order tamales (one ordered the night before and picked up fresh in the morning) and order whole cakes and flan for birthdays and parties. Ordering happens by phone; the site has no online ordering.
+Customers order tres leches and party cakes for holidays and birthdays (one ordered a half-sheet tres leches for Christmas). How orders are taken today (phone, Instagram DMs, in person) and how far ahead is unconfirmed, so the site only says "call us".
 
 ## Capabilities and Constraints
 
-- What they sell (menu categories, no prices): pan dulce (conchas and assorted sweet bread); bolillos, including bolillos with cheese and jalapeño; tamales (pork, rajas con queso, sweet pineapple); tres leches cakes (chocolate and vanilla), custom and birthday cakes; tres leches gelatinas; flan (slices and whole flan for parties); empanadas; Jarritos and other drinks.
-- Fully bilingual, English default, obvious language toggle. Spanish written naturally, with uncertain phrasing flagged for a native speaker.
+- What they sell (no prices): pan dulce including conchas; bolillos, including cheese and jalapeño, and chorizo and cheese; churros, plain or filled with strawberry or vanilla; tortas, including torta de milanesa; loaf cakes, including the new blueberry lemon loaf; buñuelos; tres leches and party cakes; hot champurrado Friday to Sunday; Rosca de Reyes (seasonal).
+- Fully bilingual, English default, obvious language toggle. Spanish written naturally (usted), with uncertain phrasing flagged for a native speaker.
 - Unlisted spec site: `noindex, nofollow` meta and a robots.txt that disallows everything.
-- LocalBusiness/Bakery JSON-LD with the verified details, ready for launch.
-- Undecided (must stay visible placeholders): prices, cake sizes and flavors, order lead time, deposits, tamale days, seasonal items (Christmas tamales, Rosca de Reyes, pan de muerto), owner's name, story, founding year, logo, photos, holiday hours.
+- Bakery JSON-LD with the verified details and social profiles, ready for launch.
+- Undecided (must stay visible placeholders): prices, cake sizes and flavors, whether ordering ahead is required and how far ahead, how orders are taken, other seasonal items and dates (including Rosca dates), holiday schedule, owner's name and story, photos.
 
 ## Brand Commitments
 
-- No logo exists yet; the name set in type is the identity for now.
+- The logo is the identity: red line art on cream. The site is built from it (logo red, cream, concha pink, cocoa). Logo file to be supplied as `images/logo.png`.
+- Must not resemble the builder's earlier bakery spec site ("Rótulo") (painted sign blocks, marigold, teal, condensed type).
 - No em dashes in site copy.
 - Avoid clichés: sombreros, cacti, papel picado overload. Avoid generic AI patterns: purple or blue gradients, "Welcome to our bakery" filler, fake testimonials, fake stats, emoji as decoration, stock hero images.
 
 ## Evidence on Hand
 
-Verified business facts above (Google listing, Nov 2026). Menu categories come from customer reviews. No photos yet (the user will supply them), no testimonials, no prices. Never copy Google or Yelp reviews. Never make allergen, ingredient or "fresh daily" claims unless confirmed.
+Verified business facts above (Google listing and Instagram, Nov 2026). Products come from their Instagram posts and Google reviews. Three sample photos (Wikimedia Commons) stand in for pan dulce, bolillos and cakes; every other product has an empty photo slot. No testimonials, no prices. Never copy reviews. Never make allergen, ingredient or "fresh daily" claims unless confirmed.
 
 ## Product Principles
 
 1. Calling is the main action and is always within thumb reach.
-2. Name, address and phone are unmistakable, so nobody ends up at the wrong bakery.
-3. What they sell, shown with photos, comes before ordering details; big orders are secondary.
+2. Name, address and phone are unmistakable.
+3. What they bake, shown with photos, comes before ordering details.
 4. Nothing unconfirmed passes as fact: every unknown is a visible placeholder the owner approves.
 5. Spanish and English are equals, not a translation bolted on.
 
 ## Accessibility & Inclusion
 
-Semantic HTML, alt text slots for all photos, strong contrast for outdoor phone use, a keyboard-usable language toggle, and correct `lang` attributes for both languages. Readers of all ages, so body type stays large and legible.
+Semantic HTML, alt text for all photos (EN and ES), strong contrast for outdoor phone use, a keyboard-usable language toggle, correct `lang` attributes, reduced-motion support. Readers of all ages, so body type stays large and legible.

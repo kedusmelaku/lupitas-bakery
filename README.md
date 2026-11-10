@@ -1,13 +1,13 @@
-# El Chicanito Bakery: spec site
+# Lupita's Bakery: spec site
 
-An unlisted one-page spec site for El Chicanito Bakery (1164 E Dundee Rd, Palatine, IL 60074, (847) 221-5447). Plain HTML, CSS and a little vanilla JS: no framework and no build step.
+An unlisted one-page spec site for Lupita's Bakery (220 McHenry Rd, Wheeling, IL 60090, (847) 419-0970). Plain HTML, CSS and a little vanilla JS: no framework and no build step.
 
 - `index.html`: the page (English and Spanish side by side, switched with `lang`)
-- `styles.css`: the "Rótulo" hand-painted sign look
-- `main.js`: language toggle, live open/closed status (Chicago time), and the call bar
+- `styles.css`: the "Papel de envoltura" wrapping-paper look (see `DESIGN.md`)
+- `main.js`: language toggle, live open/closed status and the champurrado "Today" tag (Chicago time), and the call bar
 - `robots.txt` + `<meta name="robots" content="noindex, nofollow">`: keep it out of search
-- `images/`: sample menu photos as compressed WebP (see `CREDITS.md`)
-- `fonts/`: self-hosted Anybody and Atkinson Hyperlegible Next (both SIL Open Font License)
+- `images/`: three sample menu photos as compressed WebP (see `CREDITS.md`); the logo goes here as `logo.png`
+- `fonts/`: self-hosted Bagel Fat One and Nunito Sans (both SIL Open Font License)
 
 ## Preview
 
@@ -15,43 +15,64 @@ An unlisted one-page spec site for El Chicanito Bakery (1164 E Dundee Rd, Palati
 python3 -m http.server 8000
 ```
 
-Then open `http://localhost:8000/`. Useful links:
+Then open `http://localhost:8000/`. `?lang=es` opens in Spanish; without it, the page follows the saved choice, then the browser language.
 
-- `?lang=es` opens in Spanish
+## Logo
+
+Save the logo as `images/logo.png` (square, at least 480×480). The circle in the hero shows a "Logo" placeholder until the file exists; nothing else needs to change.
 
 ## Placeholders to fill (owner to confirm)
 
-Every unconfirmed item is marked on the page with a small mustard "TBD" (Spanish: "Pendiente") label and a dotted mustard underline. To find them in the code, search `class="ph"`.
+Every unconfirmed item is a pink chip with a red "TBD" (Spanish: "PENDIENTE") label and a dotted underline. To find them in the code, search `class="ph"`.
 
-1. Holiday hours (Hours board). Also, the "Open now" pill does not know about holidays yet.
-2. The whole Big orders opening line: "Call ahead for whole cakes, whole flan, and tamales by the dozen" (placeholder wording)
-3. Order ahead: required or just recommended?
-4. How much notice for big orders
-5. Which days tamales are available
-6. Cake sizes, other flavors, deposit
-7. Seasonal items: Christmas tamales, Rosca de Reyes, pan de muerto
-8. The other pan dulce, by name
-9. Empanada fillings
-10. Owner's story: who started El Chicanito, when, and why (owner writes or approves)
+1. Holiday schedule (hours ticket). The "Open now" pill does not know about holidays yet.
+2. Other pan dulce, by name
+3. Other tortas besides torta de milanesa
+4. Other loaf cake flavors besides blueberry lemon
+5. Buñuelos description
+6. Cake sizes and flavors (menu card)
+7. Rosca de Reyes dates
+8. Rosca de Reyes sizes, and whether to order ahead
+9. Other seasonal items, and when
+10. Big orders: how many days ahead, and whether ordering ahead is required
+11. Big orders: cake sizes and flavors
+12. Big orders: other ways to order (in person, Instagram messages?)
+13. Owner's name and story: who started Lupita's, when, and why (owner writes or approves)
 
-**Photos:** the seven menu photos are sample photos from Wikimedia Commons, each tagged "Sample photo" on the page. Every one is listed with its source, author and license in [CREDITS.md](CREDITS.md), along with how to swap it. The storefront frame in "The bakery" is still empty and needs a real photo of the shop (3:2, 1200×800).
+## Image slots to fill
 
-**Still unknown, not shown on the page:** logo, owner's name, founding year, prices (none on purpose).
+| Slot | Ratio / size | What to shoot |
+|---|---|---|
+| Logo (hero) | 1:1, 480×480+ PNG | The logo file, `images/logo.png` |
+| Pan dulce | 3:2, 1200×800 | Replace the sample: their conchas and pan dulce |
+| Bolillos | 1:1, 960×960 | Replace the sample: their bolillos (cheese and jalapeño, chorizo and cheese) |
+| Churros | 1:1, 960×960 | Churros, filled and plain |
+| Tortas | 1:1, 960×960 | A torta de milanesa, cut in half |
+| Loaf cakes | 1:1, 960×960 | The blueberry lemon loaf, sliced |
+| Buñuelos | 1:1, 960×960 | Buñuelos, stacked |
+| Cakes | 1:1, 960×960 | Replace the sample: their tres leches or a party cake |
+| Rosca de Reyes | 3:2, 1200×800 | A Lupita's Rosca de Reyes, whole |
+| The bakery | 3:2, 1200×800 | The storefront from McHenry Rd, sign visible |
+
+To fill an empty slot, replace its `<div class="photo__slot">…</div>` with `<img class="photo__img" src="images/NAME.webp" width="…" height="…" loading="lazy" decoding="async" alt="…" data-alt-es="…">`.
+
+**Still unknown, not shown on the page:** prices (none on purpose).
 
 **Before launch:**
 - Remove the robots `noindex` meta tag and replace robots.txt.
-- Add `url`, `geo` (latitude/longitude) and `image` to the JSON-LD.
+- Add `url`, `geo` (latitude/longitude), `logo` and `image` to the JSON-LD.
 - Remove the "Preview site" line in the footer.
+- Check the "New" tag on the blueberry lemon loaf is still current.
 
 ## Spanish for a native speaker to check
 
-I believe the Spanish is natural, but please have a native speaker confirm these lines:
+The Spanish uses usted throughout. Please have a native speaker confirm:
 
-- "Pedidos grandes" as the Big orders title, and "Llame con anticipación para pasteles enteros, flan entero y tamales por docena"
-- "Pase cuando guste, todos los días" for "Walk-ins welcome every day"
-- "Cuando llame, díganos qué quiere, cuántos y el día y la hora en que pasa a recoger" (usted register used throughout)
-- "Pasteles de cumpleaños y sobre pedido" for custom cakes
-- "Encargar antes", "Anticipación" (notice) and "Anticipo" (deposit) as labels
-- "De puerco" vs "de cerdo" for pork tamales (puerco chosen as the more common Mexican usage)
-- Times written "de 5 a.m. a 9 p.m."
+- "Champurrado calientito este fin de semana" / "Champurrado calientito hoy"
+- "Lo que horneamos" for "What we bake"
+- "Panqué de mora azul y limón" for the blueberry lemon loaf ("mora azul" vs "arándano")
+- "Pedidos grandes y pasteles para fiesta", and "Para pedidos grandes y pasteles para fiesta, llámenos"
+- "Con cuánta anticipación" and "Otras formas de pedir" as labels
+- "Llame al (847) 419-0970" on the call buttons, "Llame para encargar" in the order section
+- Times written "de 5 a.m. a 10 p.m."
 - "Sitio de muestra. Contenido pendiente de aprobación." in the footer
